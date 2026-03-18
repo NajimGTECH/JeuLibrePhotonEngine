@@ -421,8 +421,9 @@ FodyWeavers.xsd
 # PhotonEngine ignore list
 #===================================================
 
-# src file
+# src and Scripts file
 src/
+Scripts/
 
 # files
 *.exe
