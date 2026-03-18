@@ -1,0 +1,21 @@
+{
+    "OutputPath": "Data/Resources.pak",
+    "EncryptionKey": "PhotonEngineReleaseKey_2026",
+    "CustomSystemsManifest": "Engine/CustomSystems.json",
+    "Assets": {
+        "Scripts/FreeCamera.dll": "Scripts/FreeCamera.dll",
+        "Assets/Scenes/DefaultScene.pscene": "Assets/Scenes/DefaultScene.pscene",
+        "Assets/Scenes/NewScene1.pscene": "Assets/Scenes/NewScene1.pscene",
+        "Assets/Audio/SAD FUNK.pa": "Assets/Audio/SAD FUNK.pa",
+        "Assets/barrel_mesh.pa": "Assets/barrel_mesh.pa",
+        "Assets/Default/untitled_mesh.pa": "Assets/Default/untitled_mesh.pa",
+        "Assets/Mimic/Mimic_mesh.pa": "Assets/Mimic/Mimic_mesh.pa",
+        "Assets/Mimic/Mimic_skeleton.pa": "Assets/Mimic/Mimic_skeleton.pa",
+        "Assets/Mimic/Mimic_anim_Mimic_Mimic.pa": "Assets/Mimic/Mimic_anim_Mimic_Mimic.pa",
+        "Assets/Mimic/Mimic_mat_EyeMat.pa": "Assets/Mimic/Mimic_mat_EyeMat.pa",
+        "Assets/Mimic/Mimic_mat_LimbsMat.pa": "Assets/Mimic/Mimic_mat_LimbsMat.pa",
+        "Assets/Mimic/Mimic_mat_TorsoMat.pa": "Assets/Mimic/Mimic_mat_TorsoMat.pa",
+        "Assets/Mimic/LimbsTex_C.pa": "Assets/Mimic/LimbsTex_C.pa",
+        "Assets/Mimic/TorsoTex_C.pa": "Assets/Mimic/TorsoTex_C.pa"
+    }
+}

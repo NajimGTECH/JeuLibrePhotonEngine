@@ -416,3 +416,16 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+#===================================================
+# PhotonEngine ignore list
+#===================================================
+
+# src file
+src/
+
+# files
+*.exe
+*.lib
+*.dll
+*.ini
