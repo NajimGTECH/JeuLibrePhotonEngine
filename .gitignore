@@ -425,6 +425,9 @@ FodyWeavers.xsd
 src/
 Scripts/
 
+# Do not ignore obj (3d models)
+!Assets/**/*.obj
+
 # files
 *.exe
 *.lib
