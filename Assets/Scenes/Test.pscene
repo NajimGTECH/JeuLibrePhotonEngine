@@ -1,0 +1,94 @@
+{
+    "Entities": [
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
+                        "Weight": 0.002162426710128784
+                    },
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
+                        "Weight": 0.9978376030921936
+                    }
+                ],
+                "SkeletonPath": "Assets\\Characters\\Mousey_skeleton.pa"
+            },
+            "EntityID": 1,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Mousey_mat_Ch14_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Mousey_mesh.pa"
+            },
+            "Name": "Mousey",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [],
+                "SkeletonPath": ""
+            },
+            "EntityID": 2,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 30.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Ambiant Light",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    1.100000023841858,
+                    1.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ]
+}

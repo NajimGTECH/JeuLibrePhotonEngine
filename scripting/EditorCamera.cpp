@@ -9,7 +9,7 @@
 
 class EditorCamera : public Engine::Scripting::NativeScript {
 public:
-    float speed = 0.5f;
+    float speed = 50.f;
     float sensitivity = 0.1f;
     float yaw = -90.0f;
     float pitch = 0.0f;
