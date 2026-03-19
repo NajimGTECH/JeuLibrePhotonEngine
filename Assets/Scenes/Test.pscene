@@ -1,24 +1,101 @@
 {
     "Entities": [
         {
+            "Camera": {
+                "FarPlane": 1000.0,
+                "Fov": 80.0,
+                "NearPlane": 0.009999999776482582
+            },
+            "EntityID": 1203,
+            "Name": "Main Camera",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ThirdPersonCamera.dll"
+            },
+            "Transform": {
+                "Position": [
+                    0.018616728484630585,
+                    0.11290646344423294,
+                    0.25586554408073425
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1204,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.0,
+                "OrthoSize": 1.0,
+                "Range": 5.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 0
+            },
+            "Name": "Sun",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
             "Animator": {
                 "Animations": [
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.9933999180793762
+                        "Weight": 2.0507715817075223e-05
+                    },
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
+                        "Weight": 0.9944629669189453
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.006600082851946354
+                        "Weight": 0.0055165584199130535
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey_skeleton.pa"
             },
-            "EntityID": 1,
+            "EntityID": 1205,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -26,57 +103,64 @@
                 ],
                 "Path": "Assets\\Characters\\Mousey_mesh.pa"
             },
-            "Name": "Mousey",
-            "Transform": {
-                "Position": [
+            "Name": "Character",
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 0.20100000500679016,
+                "Offset": [
                     0.0,
-                    0.10000000149011612,
+                    0.07500000298023224,
                     0.0
                 ],
-                "Rotation": [
-                    0.0,
-                    -0.0,
-                    0.0
+                "PosLock": [
+                    false,
+                    false,
+                    false
                 ],
-                "Scale": [
-                    0.009999999776482582,
-                    0.009999999776482582,
-                    0.009999999776482582
-                ]
-            }
-        },
-        {
-            "EntityID": 2,
-            "Light": {
-                "CastShadows": true,
-                "Color": [
-                    2.0,
-                    1.0,
-                    1.0
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
                 ],
-                "Direction": [
-                    0.0,
-                    -1.0,
-                    0.0
-                ],
-                "Intensity": 20.0,
-                "OrthoSize": 15.0,
-                "Range": 1000.0,
-                "ShadowFar": 13.0,
-                "ShadowNear": 1.0,
-                "SpotAngle": 45.0,
-                "Type": 1
+                "ShapeType": 0
             },
-            "Name": "Ambiant Light",
             "Transform": {
                 "Position": [
                     0.0,
-                    2.5,
-                    0.29999998211860657
+                    0.0,
+                    0.0
                 ],
                 "Rotation": [
                     0.0,
-                    -0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
+                ]
+            }
+        },
+        {
+            "EntityID": 1206,
+            "Name": "AnimEditor_Preview",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
                     0.0
                 ],
                 "Scale": [
@@ -87,12 +171,39 @@
             }
         },
         {
-            "EntityID": 3,
+            "EntityID": 1207,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
             },
             "Name": "Floor",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    1.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    -0.5,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
             "Transform": {
                 "Position": [
                     0.0,
@@ -101,23 +212,23 @@
                 ],
                 "Rotation": [
                     0.0,
-                    -0.0,
+                    0.0,
                     0.0
                 ],
                 "Scale": [
-                    5.0,
                     1.0,
-                    5.0
+                    1.0,
+                    1.0
                 ]
             }
         },
         {
-            "EntityID": 5,
+            "EntityID": 1208,
             "Light": {
                 "CastShadows": true,
                 "Color": [
-                    1.0,
                     2.0,
+                    1.0,
                     1.0
                 ],
                 "Direction": [
@@ -125,20 +236,20 @@
                     -1.0,
                     0.0
                 ],
-                "Intensity": 7.0,
+                "Intensity": 2.0,
                 "OrthoSize": 15.0,
-                "Range": 1000.0,
+                "Range": 100.0,
                 "ShadowFar": 30.0,
                 "ShadowNear": 0.10000000149011612,
                 "SpotAngle": 45.0,
                 "Type": 1
             },
-            "Name": "Green Light",
+            "Name": "Light Red",
             "Transform": {
                 "Position": [
                     0.0,
-                    2.5,
-                    2.6999998092651367
+                    0.8999999761581421,
+                    -0.699999988079071
                 ],
                 "Rotation": [
                     0.0,
@@ -153,7 +264,7 @@
             }
         },
         {
-            "EntityID": 6,
+            "EntityID": 1209,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -166,20 +277,61 @@
                     -1.0,
                     0.0
                 ],
-                "Intensity": 9.0,
+                "Intensity": 2.0,
                 "OrthoSize": 15.0,
-                "Range": 1000.0,
+                "Range": 100.0,
                 "ShadowFar": 30.0,
                 "ShadowNear": 0.10000000149011612,
                 "SpotAngle": 45.0,
                 "Type": 1
             },
-            "Name": "Blue Light",
+            "Name": "Light Blue",
             "Transform": {
                 "Position": [
                     0.0,
-                    2.5,
-                    -1.600000023841858
+                    0.8999999761581421,
+                    0.699999988079071
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1210,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    2.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Green",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    1.0,
+                    0.0
                 ],
                 "Rotation": [
                     0.0,
