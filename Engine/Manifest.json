@@ -4,18 +4,21 @@
     "CustomSystemsManifest": "Engine/CustomSystems.json",
     "Assets": {
         "Scripts/FreeCamera.dll": "Scripts/FreeCamera.dll",
+        "Scripts/ThirdPersonCamera.dll": "Scripts/ThirdPersonCamera.dll",
         "Assets/Scenes/DefaultScene.pscene": "Assets/Scenes/DefaultScene.pscene",
-        "Assets/Scenes/NewScene1.pscene": "Assets/Scenes/NewScene1.pscene",
-        "Assets/Audio/SAD FUNK.pa": "Assets/Audio/SAD FUNK.pa",
-        "Assets/barrel_mesh.pa": "Assets/barrel_mesh.pa",
-        "Assets/Default/untitled_mesh.pa": "Assets/Default/untitled_mesh.pa",
-        "Assets/Mimic/Mimic_mesh.pa": "Assets/Mimic/Mimic_mesh.pa",
-        "Assets/Mimic/Mimic_skeleton.pa": "Assets/Mimic/Mimic_skeleton.pa",
-        "Assets/Mimic/Mimic_anim_Mimic_Mimic.pa": "Assets/Mimic/Mimic_anim_Mimic_Mimic.pa",
-        "Assets/Mimic/Mimic_mat_EyeMat.pa": "Assets/Mimic/Mimic_mat_EyeMat.pa",
-        "Assets/Mimic/Mimic_mat_LimbsMat.pa": "Assets/Mimic/Mimic_mat_LimbsMat.pa",
-        "Assets/Mimic/Mimic_mat_TorsoMat.pa": "Assets/Mimic/Mimic_mat_TorsoMat.pa",
-        "Assets/Mimic/LimbsTex_C.pa": "Assets/Mimic/LimbsTex_C.pa",
-        "Assets/Mimic/TorsoTex_C.pa": "Assets/Mimic/TorsoTex_C.pa"
+        "Assets/Scenes/Test.pscene": "Assets/Scenes/Test.pscene",
+        "Assets/Default/Plane_mesh.pa": "Assets/Default/Plane_mesh.pa",
+
+        "Assets/Mixamo/idle_mesh.pa": "Assets/Mixamo/idle_mesh.pa",
+        "Assets/Mixamo/idle_skeleton.pa": "Assets/Mixamo/idle_skeleton.pa",
+        "Assets/Mixamo/Jog Backward_anim_mixamorig_Hips.pa": "Assets/Mixamo/Jog Backward_anim_mixamorig_Hips.pa",
+        "Assets/Mixamo/Jogging_anim_mixamorig_Hips.pa": "Assets/Mixamo/Jogging_anim_mixamorig_Hips.pa",
+        "Assets/Mixamo/idle_anim_mixamorig_Hips.pa": "Assets/Mixamo/idle_anim_mixamorig_Hips.pa",
+        "Assets/Mixamo/Idle_mat_Ch15_body.pa": "Assets/Mixamo/Idle_mat_Ch15_body.pa",
+        "Assets/Mixamo/Idle_mat_Ch15_body1.pa": "Assets/Mixamo/Idle_mat_Ch15_body1.pa",
+        "Assets/Mixamo/textures/Ch15_1001_Diffuse.pa": "Assets/Mixamo/textures/Ch15_1001_Diffuse.pa",
+        "Assets/Mixamo/textures/Ch15_1001_Normal.pa": "Assets/Mixamo/textures/Ch15_1001_Normal.pa",
+        "Assets/Mixamo/textures/Ch15_1002_Diffuse.pa": "Assets/Mixamo/textures/Ch15_1002_Diffuse.pa",
+        "Assets/Mixamo/textures/Ch15_1002_Normal.pa": "Assets/Mixamo/textures/Ch15_1002_Normal.pa"
     }
 }

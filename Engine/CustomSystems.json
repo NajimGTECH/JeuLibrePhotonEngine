@@ -3,7 +3,7 @@
     {
       "name": "MyCustomNetworkingSystem",
       "source_file": "MyCustomNetworkingSystem.cpp",
-      "enabled": true
+      "enabled": false
     }
   ]
 }
