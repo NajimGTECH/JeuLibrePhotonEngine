@@ -1,7 +1,7 @@
 {
-	"ScreenWidth": 1920,
-	"ScreenHeight": 1080,
-	"VSync": true,
+	"ScreenWidth": 1280,
+	"ScreenHeight": 720,
+	"VSync": false,
 	"SHADOWS_SETTINGS": {
 		"SHADOW_WIDTH_2D": 2048,
 		"SHADOW_HEIGHT_2D": 2048,
