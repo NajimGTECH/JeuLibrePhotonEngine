@@ -9,9 +9,9 @@
 
 class ThirdPersonCamera : public Engine::Scripting::NativeScript {
 public:
-    float distance = 0.2f;
+    float distance = 1.1f;
     float sensitivity = 0.1f;
-    float moveSpeed = 1.0f; // Note: Increased default as this is now a velocity (m/s), not a frame delta
+    float moveSpeed = 0.3f; // Note: Increased default as this is now a velocity (m/s), not a frame delta
     float animationBlendSpeed = 10.0f; // How fast animations transition
 
     float yaw = 0.0f; 
@@ -22,13 +22,15 @@ public:
     bool invertY = false;
     
     Engine::ECS::Entity targetEntity = Engine::ECS::NULL_ENTITY;
+    Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
+
     bool isMouseCaptured = false;
     bool animationsInitialized = false;
 
     // --- Animation Paths (Replace these with your actual asset paths!) ---
-    std::string idleAnim = "Assets\\Mixamo\\Idle_anim_mixamorig_Hips.pa";
-    std::string forwardAnim = "Assets\\Mixamo\\Jogging_anim_mixamorig_Hips.pa";
-    std::string backwardAnim = "Assets\\Mixamo\\Jog Backward_anim_mixamorig_Hips.pa";
+    std::string idleAnim = "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa";
+    std::string forwardAnim = "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa";
+    std::string backwardAnim = "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa";
 
     // 1.0 = full forward, 0.0 = idle, -1.0 = full backward
     float currentMoveState = 0.0f; 
@@ -122,7 +124,9 @@ public:
         for (auto e : registry->View<Engine::Components::Transform>()) {
             if (registry->GetEntityName(e) == "Character") {
                 targetEntity = e;
-                break;
+            }
+            else if (registry->GetEntityName(e) == "Floor") {
+                targetCameraEntity = e;
             }
         }
     }
@@ -176,7 +180,7 @@ public:
             // Ignore the targetEntity (character) so the raycast doesn't hit its own capsule
             Engine::Systems::PhysicsUtils::RaycastHit hitResult = physicsSystem->Raycast(
                 targetTransform.Position, 
-                targetTransform.Position - glm::vec3(0.0, 0.05, 0.0), 
+                targetTransform.Position - glm::vec3(0.0, 0.1, 0.0), 
                 targetEntity, 
                 { true, 0.1f, {1, 0, 0}, {1, 1, 0}, {0, 1, 1}, {0.5, 0.5, 0.5}, 0.05f, 0.012f }
             );
@@ -184,9 +188,9 @@ public:
             std::string HitEntityName = registry->GetEntityName(hitResult.hitEntity);
             TerminalInstance->print("RayCast Hit " + HitEntityName);
             
-            if (HitEntityName == "Plane") {
+            if (HitEntityName == "Floor") {
                 // Apply an upward impulse to the character body
-                physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 2.0f);
+                physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 1.01f);
             }
         }
 
@@ -219,10 +223,11 @@ public:
         }
         
         if (registry->HasComponent<Engine::Components::Transform>(entityID) && 
-            registry->HasComponent<Engine::Components::Transform>(targetEntity)) {
+            registry->HasComponent<Engine::Components::Transform>(targetCameraEntity)) {
             
             auto& cameraTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
-            auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
+            auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
+            auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
 
             // Camera Rotation
             cameraTransform.Rotation.x = pitch;
@@ -247,19 +252,24 @@ public:
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_W)) {
                     inputDirection += flatForward;
                     targetMoveState = 1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw + 180.f;
                 }
+
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_S)) {
                     inputDirection -= flatForward;
                     targetMoveState = -1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw;
                 }
-                
+
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_D)) {
                     inputDirection += flatRight;
                     targetMoveState = 1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw + 90.f;
                 }
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_A)) {
                     inputDirection -= flatRight;
-                    targetMoveState = -1.0f; 
+                    targetMoveState = 1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw -90.f;
                 }
             }
 
@@ -279,7 +289,7 @@ public:
             }
 
             // Safely set character rotation (Euler locks in your PhysicsSystem handle this safely)
-            targetTransform.Rotation.y = yaw + 180.0f;
+            //cameraTransform.Rotation.y = yaw + 180.0f; // Comment because turn all the floor and not the camera
 
             // Smoothly interpolate animation states
             currentMoveState += (targetMoveState - currentMoveState) * animationBlendSpeed * dt;
