@@ -12,9 +12,19 @@ public:
     float detectDistance = 0.01f;
     Engine::ECS::Entity character = Engine::ECS::NULL_ENTITY;
 
+    auto funcSys = engine->GetSystem<Engine::Systems::FunctionRegisterySystem>();
+
     void OnInit() override {
         Inspect("Rotation Speed", &rotationSpeed);
         Inspect("Detect Distance", &detectDistance);
+    }
+
+    void OnDestroy() override {
+        if (funcSys) {
+            funcSys->Unregister("Interact");
+            //if (terminal) terminal->info("TemplateV3: Unregistered function '" + registryName + "'");
+        }
+        //if (terminal) terminal->warn("TemplateV3: OnDestroy() called.");
     }
 
     void OnCreate() override {
@@ -28,6 +38,20 @@ public:
         if (character == Engine::ECS::NULL_ENTITY) {
             TerminalInstance->error("CoinRotator: Character not found!");
         }
+
+        //=== Function Registry ===
+        if (!funcSys) {
+            std::cerr << "FunctionRegisterySystem not found!" << std::endl;
+            return;
+        }
+
+        funcSys->Register("Interact", [](std::vector<std::any> args) -> std::any {
+            if (args.size() == 1 && args[0].type() == typeid(Engine::ECS::Entity))){
+                registry->DestroyEntity(args[0]); 
+            }
+            else { std::cerr << "[Interact] Invalid type\n"; }
+            return {};
+            });
     }
 
     void OnUpdate(float dt) override {
@@ -56,7 +80,7 @@ public:
 
         if (hit.hitEntity == character) {
             TerminalInstance->info("Coin collected via Raycast!");
-            registry->DestroyEntity(entityID);
+            funcSys.Call("Interact", { entityID });
         }
     }
 };

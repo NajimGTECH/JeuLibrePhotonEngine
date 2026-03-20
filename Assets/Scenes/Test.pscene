@@ -6,7 +6,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 349,
+            "EntityID": 58,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -31,7 +31,7 @@
             }
         },
         {
-            "EntityID": 350,
+            "EntityID": 59,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -78,7 +78,7 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 2.0507295630523004e-05
+                        "Weight": 2.0506875443970785e-05
                     },
                     {
                         "IsLooping": true,
@@ -95,7 +95,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey_skeleton.pa"
             },
-            "EntityID": 351,
+            "EntityID": 60,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -150,7 +150,7 @@
             }
         },
         {
-            "EntityID": 352,
+            "EntityID": 61,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -171,7 +171,7 @@
             }
         },
         {
-            "EntityID": 353,
+            "EntityID": 62,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -212,7 +212,7 @@
                 ],
                 "Rotation": [
                     0.0,
-                    0.0,
+                    -0.0,
                     0.0
                 ],
                 "Scale": [
@@ -223,7 +223,7 @@
             }
         },
         {
-            "EntityID": 354,
+            "EntityID": 63,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -264,7 +264,7 @@
             }
         },
         {
-            "EntityID": 355,
+            "EntityID": 64,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -305,7 +305,7 @@
             }
         },
         {
-            "EntityID": 356,
+            "EntityID": 65,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -342,6 +342,64 @@
                     1.0,
                     1.0,
                     1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 66,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cheese_mesh.pa"
+            },
+            "Name": "Cheese",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator.dll"
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.05000000074505806,
+                    0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 67,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Coin_mesh.pa"
+            },
+            "Name": "Coin",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator.dll"
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.10000000149011612,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582
                 ]
             }
         }
