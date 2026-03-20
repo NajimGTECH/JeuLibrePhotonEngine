@@ -243,30 +243,33 @@ public:
             // Character Movement Logic
             float targetMoveState = 0.0f; 
             
-            glm::vec3 flatForward = glm::normalize(glm::vec3(targetCharacterTransform.Forward.x, 0.0f, targetCharacterTransform.Forward.z));
+            glm::vec3 flatForward = glm::normalize(glm::vec3(cameraTransform.Forward.x, 0.0f, cameraTransform.Forward.z));
             glm::vec3 flatRight = glm::normalize(glm::cross(flatForward, glm::vec3(0.0f, 1.0f, 0.0f)));
 
             glm::vec3 inputDirection(0.0f);
-
-
 
             if (isMouseCaptured) {
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_W)) {
                     inputDirection += flatForward;
                     targetMoveState = 1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw + 180.f;
                 }
+
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_S)) {
                     inputDirection -= flatForward;
                     targetMoveState = -1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw;
                 }
-                
+
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_D)) {
                     inputDirection += flatRight;
                     targetMoveState = 1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw + 90.f;
                 }
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_A)) {
                     inputDirection -= flatRight;
-                    targetMoveState = -1.0f; 
+                    targetMoveState = 1.0f; 
+                    targetCharacterTransform.Rotation.y = yaw -90.f;
                 }
             }
 
@@ -286,7 +289,7 @@ public:
             }
 
             // Safely set character rotation (Euler locks in your PhysicsSystem handle this safely)
-            //targetCharacterTransform.Rotation.y = yaw + 180.0f; // Comment because turn all the floor and not the camera
+            //cameraTransform.Rotation.y = yaw + 180.0f; // Comment because turn all the floor and not the camera
 
             // Smoothly interpolate animation states
             currentMoveState += (targetMoveState - currentMoveState) * animationBlendSpeed * dt;

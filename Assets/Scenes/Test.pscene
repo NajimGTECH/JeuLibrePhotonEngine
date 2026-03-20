@@ -6,7 +6,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 1203,
+            "EntityID": 349,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -31,7 +31,7 @@
             }
         },
         {
-            "EntityID": 1204,
+            "EntityID": 350,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -78,7 +78,7 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 2.0507715817075223e-05
+                        "Weight": 2.0507295630523004e-05
                     },
                     {
                         "IsLooping": true,
@@ -95,7 +95,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey_skeleton.pa"
             },
-            "EntityID": 1205,
+            "EntityID": 351,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -150,7 +150,7 @@
             }
         },
         {
-            "EntityID": 1206,
+            "EntityID": 352,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -171,7 +171,7 @@
             }
         },
         {
-            "EntityID": 1207,
+            "EntityID": 353,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -223,7 +223,7 @@
             }
         },
         {
-            "EntityID": 1208,
+            "EntityID": 354,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -264,7 +264,7 @@
             }
         },
         {
-            "EntityID": 1209,
+            "EntityID": 355,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -305,7 +305,7 @@
             }
         },
         {
-            "EntityID": 1210,
+            "EntityID": 356,
             "Light": {
                 "CastShadows": true,
                 "Color": [
