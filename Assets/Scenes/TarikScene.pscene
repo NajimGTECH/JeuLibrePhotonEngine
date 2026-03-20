@@ -6,7 +6,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 155,
+            "EntityID": 185,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -31,7 +31,7 @@
             }
         },
         {
-            "EntityID": 156,
+            "EntityID": 186,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -78,24 +78,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\Jog Backward_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\Jog Backward_anim_mixamorig_Hips.pa",
-                        "Weight": 0.7997056841850281
+                        "Weight": 0.22726672887802124
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\Jogging_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\Jogging_anim_mixamorig_Hips.pa",
-                        "Weight": 0.0005897698574699461
+                        "Weight": 0.7500234246253967
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\idle_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\idle_anim_mixamorig_Hips.pa",
-                        "Weight": 0.1997045874595642
+                        "Weight": 0.022709855809807777
                     }
                 ],
                 "SkeletonPath": "Assets\\Mixamo\\idle_skeleton.pa"
             },
-            "EntityID": 157,
+            "EntityID": 187,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -151,7 +151,7 @@
             }
         },
         {
-            "EntityID": 158,
+            "EntityID": 188,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -207,7 +207,7 @@
                 "Animations": [],
                 "SkeletonPath": "Assets\\Default\\CoinDae_skeleton.pa"
             },
-            "EntityID": 159,
+            "EntityID": 189,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -216,6 +216,10 @@
                 "Path": "Assets\\Default\\CoinDae_mesh.pa"
             },
             "Name": "Coin",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator"
+            },
             "Transform": {
                 "Position": [
                     0.10000000149011612,
@@ -235,7 +239,7 @@
             }
         },
         {
-            "EntityID": 160,
+            "EntityID": 190,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -272,6 +276,39 @@
                     1.0,
                     1.0,
                     1.0
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [],
+                "SkeletonPath": "Assets\\Default\\Cheese_skeleton.pa"
+            },
+            "EntityID": 191,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cheese_mesh.pa"
+            },
+            "Name": "Cheese",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator"
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.10000000149011612,
+                    0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
                 ]
             }
         }
