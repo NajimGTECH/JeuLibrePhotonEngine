@@ -6,11 +6,11 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 349,
+            "EntityID": 7,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/ThirdPersonCamera.dll"
+                "Path": "Scripts/Chrono.dll"
             },
             "Transform": {
                 "Position": [
@@ -31,7 +31,7 @@
             }
         },
         {
-            "EntityID": 350,
+            "EntityID": 8,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -78,24 +78,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 2.0507295630523004e-05
+                        "Weight": 2.05074993573362e-05
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.9944629669189453
+                        "Weight": 0.9944932460784912
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.0055165584199130535
+                        "Weight": 0.005486293230205774
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey_skeleton.pa"
             },
-            "EntityID": 351,
+            "EntityID": 9,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -150,7 +150,7 @@
             }
         },
         {
-            "EntityID": 352,
+            "EntityID": 10,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -171,7 +171,7 @@
             }
         },
         {
-            "EntityID": 353,
+            "EntityID": 11,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -223,7 +223,7 @@
             }
         },
         {
-            "EntityID": 354,
+            "EntityID": 12,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -264,7 +264,7 @@
             }
         },
         {
-            "EntityID": 355,
+            "EntityID": 13,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -305,7 +305,7 @@
             }
         },
         {
-            "EntityID": 356,
+            "EntityID": 14,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -342,6 +342,56 @@
                     1.0,
                     1.0,
                     1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 15,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Numbers\\Number0_mesh.pa"
+            },
+            "Name": "ChronoG",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.30000001192092896,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
+                ]
+            }
+        },
+        {
+            "EntityID": 16,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Numbers\\Number1_mesh.pa"
+            },
+            "Name": "ChronoD",
+            "Transform": {
+                "Position": [
+                    0.10000000149011612,
+                    0.30000001192092896,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
                 ]
             }
         }
