@@ -15,7 +15,9 @@ public:
     float animationBlendSpeed = 10.0f; // How fast animations transition
 
     float yaw = 0.0f;
-    float pitch = 20.0f;
+    float pitch = -30.f;
+    const float MAX_PITCH_LIMIT = 0.f;
+    const float MIN_PITCH_LIMIT = -60.f;
     float targetHeightOffset = 0.1f; 
     
     bool invertX = false;
@@ -198,12 +200,26 @@ public:
         }
 
         // Camera Key Movements
-        if (InputSysteminstance->GetKeyState(GLFW_KEY_Q)) {
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_LEFT)) {
             yaw += -1.f * cameraSpeed * dt;
         }
 
-        if (InputSysteminstance->GetKeyState(GLFW_KEY_E)) {
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_RIGHT)) {
             yaw += 1.f * cameraSpeed * dt;
+        }
+
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_UP)) {
+
+            if (pitch <= MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
+
+            pitch -= 1.f * cameraSpeed * dt;
+        }
+
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_DOWN)) {
+
+            if (pitch >= MAX_PITCH_LIMIT) pitch = MAX_PITCH_LIMIT;
+
+            pitch += 1.f * cameraSpeed * dt;
         }
         
         if (registry->HasComponent<Engine::Components::Transform>(entityID) && 
@@ -213,7 +229,7 @@ public:
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
 
             // Camera Rotation
-            cameraTransform.Rotation.x = -30.f;
+            cameraTransform.Rotation.x = pitch;
             cameraTransform.Rotation.y = yaw; 
             cameraTransform.Rotation.z = 0.0f; 
 

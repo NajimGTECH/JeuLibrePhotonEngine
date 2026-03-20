@@ -6,7 +6,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 420,
+            "EntityID": 125,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -31,7 +31,7 @@
             }
         },
         {
-            "EntityID": 421,
+            "EntityID": 126,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -78,24 +78,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\Jog Backward_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\Jog Backward_anim_mixamorig_Hips.pa",
-                        "Weight": 0.7144213318824768
+                        "Weight": 0.7778598666191101
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\Jogging_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\Jogging_anim_mixamorig_Hips.pa",
-                        "Weight": 0.0716320350766182
+                        "Weight": 0.055719684809446335
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\idle_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\idle_anim_mixamorig_Hips.pa",
-                        "Weight": 0.2139466106891632
+                        "Weight": 0.16642047464847565
                     }
                 ],
                 "SkeletonPath": "Assets\\Mixamo\\idle_skeleton.pa"
             },
-            "EntityID": 422,
+            "EntityID": 127,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -151,7 +151,7 @@
             }
         },
         {
-            "EntityID": 423,
+            "EntityID": 128,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -203,7 +203,7 @@
             }
         },
         {
-            "EntityID": 424,
+            "EntityID": 129,
             "Name": "New Entity",
             "Transform": {
                 "Position": [
