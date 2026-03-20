@@ -9,14 +9,16 @@
 
 class ThirdPersonCamera : public Engine::Scripting::NativeScript {
 public:
-    float distance = 1.1f;
-    float sensitivity = 0.1f;
+    float distance = 1.5f;
+    float cameraSpeed = 75.0f;
     float moveSpeed = 0.3f; // Note: Increased default as this is now a velocity (m/s), not a frame delta
     float animationBlendSpeed = 10.0f; // How fast animations transition
 
-    float yaw = 0.0f; 
-    float pitch = 20.0f;
-    float targetHeightOffset = 0.1f; 
+    float yaw = 0.0f;
+    float pitch = -30.f;
+    const float MAX_PITCH_LIMIT = 0.f;
+    const float MIN_PITCH_LIMIT = -60.f;
+    float targetHeightOffset = 0.1f;
     
     bool invertX = false;
     bool invertY = false;
@@ -37,7 +39,7 @@ public:
 
     void OnInit() override {
         Inspect("Distance", &distance);
-        Inspect("Sensitivity", &sensitivity);
+        Inspect("CameraSpeed", &cameraSpeed);
         Inspect("Move Speed", &moveSpeed);
         Inspect("Height Offset", &targetHeightOffset);
         Inspect("Invert X", &invertX);
@@ -198,28 +200,27 @@ public:
             return;
         }
 
-        // Mouse Look (Orbit Camera)
-        if (isMouseCaptured) { 
-            if (!isMouseCaptured) {
-                InputSysteminstance->SetMouseCapture(true);
-                isMouseCaptured = true;
-            }
+        // Camera Key Movements
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_LEFT)) {
+            yaw += -1.f * cameraSpeed * dt;
+        }
 
-            glm::vec2 look = InputSysteminstance->lookInput;
-            
-            if (invertX) yaw += look.x * sensitivity;
-            else         yaw -= look.x * sensitivity;
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_RIGHT)) {
+            yaw += 1.f * cameraSpeed * dt;
+        }
 
-            if (invertY) pitch -= look.y * sensitivity;
-            else         pitch += look.y * sensitivity;
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_UP)) {
 
-            if (pitch > 89.0f) pitch = 89.0f;
-            if (pitch < -89.0f) pitch = -89.0f;
-        } else {
-            if (isMouseCaptured) {
-                InputSysteminstance->SetMouseCapture(false);
-                isMouseCaptured = false;
-            }
+            if (pitch <= MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
+
+            pitch -= 1.f * cameraSpeed * dt;
+        }
+
+        if (InputSysteminstance->GetKeyState(GLFW_KEY_DOWN)) {
+
+            if (pitch >= MAX_PITCH_LIMIT) pitch = MAX_PITCH_LIMIT;
+
+            pitch += 1.f * cameraSpeed * dt;
         }
         
         if (registry->HasComponent<Engine::Components::Transform>(entityID) && 
@@ -231,8 +232,8 @@ public:
 
             // Camera Rotation
             cameraTransform.Rotation.x = pitch;
-            cameraTransform.Rotation.y = yaw; 
-            cameraTransform.Rotation.z = 0.0f; 
+            cameraTransform.Rotation.y = yaw;
+            cameraTransform.Rotation.z = 0.0f;
 
             glm::mat4 rotationMatrix = glm::mat4(1.0f);
             rotationMatrix = glm::rotate(rotationMatrix, glm::radians(cameraTransform.Rotation.y), glm::vec3(0, 1, 0)); 
