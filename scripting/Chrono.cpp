@@ -20,12 +20,15 @@ public:
 
     bool invertX = false;
     bool invertY = false;
+    bool invertEnemyDir = false;
+    bool invertPlateformDir = false;
 
     Engine::ECS::Entity targetEntity = Engine::ECS::NULL_ENTITY;
+    Engine::ECS::Entity targetEnemy = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetChronoGEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetChronoDEntity = Engine::ECS::NULL_ENTITY;
-
+    Engine::ECS::Entity targetPlateform = Engine::ECS::NULL_ENTITY;
 
     bool isMouseCaptured = false;
     bool animationsInitialized = false;
@@ -34,6 +37,9 @@ public:
     std::string idleAnim = "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa";
     std::string forwardAnim = "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa";
     std::string backwardAnim = "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa";
+
+    std::string forwardAnimEnemy = "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa";
+    std::string attackAnimEnemy = "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa";
 
     // 1.0 = full forward, 0.0 = idle, -1.0 = full backward
     float currentMoveState = 0.0f;
@@ -138,6 +144,12 @@ public:
             else if (registry->GetEntityName(e) == "ChronoD") {
                 targetChronoDEntity = e;
             }
+            else if (registry->GetEntityName(e) == "Enemy") {
+                targetEnemy = e;
+            }
+            else if (registry->GetEntityName(e) == "Plateforme") {
+                targetPlateform = e;
+            }
         }
     }
 
@@ -200,7 +212,7 @@ public:
 
             if (HitEntityName == "Floor") {
                 // Apply an upward impulse to the character body
-                physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 1.01f);
+                physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 0.7f);
             }
         }
 
@@ -239,6 +251,41 @@ public:
             auto& cameraTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
             auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
+            auto& targetEnemyTransform = registry->GetComponent<Engine::Components::Transform>(targetEnemy);
+            auto& targetPlateformTransform = registry->GetComponent<Engine::Components::Transform>(targetPlateform);
+
+            // Enemy Patrol
+            if (targetEnemyTransform.Position.z <= -0.9) invertEnemyDir = false;
+            if (targetEnemyTransform.Position.z >= 0.9) invertEnemyDir = true;
+
+            if (invertEnemyDir) {
+                targetEnemyTransform.Position.z -= 0.001;
+                targetEnemyTransform.Rotation.y = 180;
+            }
+            if (!invertEnemyDir) {
+                targetEnemyTransform.Position.z += 0.001;
+                targetEnemyTransform.Rotation.y = 0;
+            }
+
+            // Plateform Pattern 
+            if (targetPlateformTransform.Position.x <= -0.9) {
+                invertPlateformDir = false;
+                targetPlateformTransform.Position.x = -0.89;
+            }
+            if (targetPlateformTransform.Position.x >= 0.9) {
+                invertPlateformDir = true;
+                targetPlateformTransform.Position.x = 0.89;
+            }
+
+            if (invertPlateformDir) {
+                targetPlateformTransform.Position.x -= 0.001;
+            }
+            if (!invertPlateformDir) {
+                targetPlateformTransform.Position.x += 0.001;
+            }
+
+            targetPlateformTransform.Position.y = 0.05;
+            targetPlateformTransform.Position.z = 0;
 
             // Camera Rotation
             cameraTransform.Rotation.x = pitch;
