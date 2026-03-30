@@ -18,7 +18,7 @@ public:
     Engine::ECS::Entity targetR3 = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetR4 = Engine::ECS::NULL_ENTITY;
 
-
+    float val = 0.1f;
 
     void OnCreate() override {
         FindTarget();
@@ -72,17 +72,15 @@ public:
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
 
-        targetR1Transform.Position.x = targetTrampolineTransform.Position.x + 0.30;
-        targetR2Transform.Position.z = targetTrampolineTransform.Position.z + 0.30;
-        targetR3Transform.Position.x = targetTrampolineTransform.Position.x - 0.10;
-        targetR4Transform.Position.z = targetTrampolineTransform.Position.z - 0.10;
+        targetR1Transform.Position.x = targetTrampolineTransform.Position.x + val;
+        targetR2Transform.Position.x = targetTrampolineTransform.Position.y + val;
+        targetR3Transform.Position.x = targetTrampolineTransform.Position.x - val;
+        targetR4Transform.Position.x = targetTrampolineTransform.Position.y - val;
 
-        if (targetCharacterTransform.Position.x <= targetTrampolineTransform.Position.x + 0.30 && targetCharacterTransform.Position.z <= targetTrampolineTransform.Position.z + 0.30 &&
-            targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.x - 0.10 && targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.z - 0.10) {
-            physicsSystem->AddImpulse(targetCharacter, targetCharacterTransform.Up * 0.7f);
+        if (targetCharacterTransform.Position.x <= targetR1Transform.Position.x + val && targetCharacterTransform.Position.y <= targetR2Transform.Position.y + val &&
+            targetCharacterTransform.Position.x >= targetR3Transform.Position.x - val && targetCharacterTransform.Position.y >= targetR4Transform.Position.y - val) {
+            physicsSystem->AddImpulse(targetCharacter, targetCharacterTransform.Up * 0.1f);
         }
-
-        //if(targetTrampolineCollider.GetBoxSize().radius <= 0.01 && )
     }
 };
 
