@@ -1,12 +1,16 @@
 {
     "Entities": [
         {
-            "EntityID": 932,
+            "EntityID": 129,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
             },
             "Name": "Plateforme",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/PlateformNativeScript.dll"
+            },
             "RigidBody": {
                 "BoxSize": [
                     2.0,
@@ -70,7 +74,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 933,
+            "EntityID": 130,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -79,6 +83,10 @@
                 "Path": "Assets\\Characters\\Enemy\\Enemy_mesh.pa"
             },
             "Name": "Enemy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/EnemyNativeScript.dll"
+            },
             "RigidBody": {
                 "BoxSize": [
                     70.0,
@@ -130,11 +138,11 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 934,
+            "EntityID": 131,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Chrono.dll"
+                "Path": "Scripts/CameraNativeScript.dll"
             },
             "Transform": {
                 "Position": [
@@ -155,7 +163,7 @@
             }
         },
         {
-            "EntityID": 935,
+            "EntityID": 132,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -202,24 +210,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.0771341472864151
+                        "Weight": 0.0787380188703537
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.859490156173706
+                        "Weight": 0.8773617148399353
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.06337568908929825
+                        "Weight": 0.04390023648738861
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 936,
+            "EntityID": 133,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -274,7 +282,7 @@
             }
         },
         {
-            "EntityID": 937,
+            "EntityID": 134,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -295,7 +303,7 @@
             }
         },
         {
-            "EntityID": 938,
+            "EntityID": 135,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -320,7 +328,7 @@
             }
         },
         {
-            "EntityID": 939,
+            "EntityID": 136,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -361,7 +369,7 @@
             }
         },
         {
-            "EntityID": 940,
+            "EntityID": 137,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -402,7 +410,7 @@
             }
         },
         {
-            "EntityID": 941,
+            "EntityID": 138,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -443,7 +451,7 @@
             }
         },
         {
-            "EntityID": 942,
+            "EntityID": 139,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Numbers\\Number0_mesh.pa"
@@ -468,7 +476,7 @@
             }
         },
         {
-            "EntityID": 943,
+            "EntityID": 140,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Numbers\\Number1_mesh.pa"
@@ -493,7 +501,7 @@
             }
         },
         {
-            "EntityID": 944,
+            "EntityID": 141,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"

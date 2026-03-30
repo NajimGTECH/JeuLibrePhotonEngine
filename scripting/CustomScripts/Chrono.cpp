@@ -20,15 +20,11 @@ public:
 
     bool invertX = false;
     bool invertY = false;
-    bool invertEnemyDir = false;
-    bool invertPlateformDir = false;
 
     Engine::ECS::Entity targetEntity = Engine::ECS::NULL_ENTITY;
-    Engine::ECS::Entity targetEnemy = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetChronoGEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetChronoDEntity = Engine::ECS::NULL_ENTITY;
-    Engine::ECS::Entity targetPlateform = Engine::ECS::NULL_ENTITY;
 
     bool isMouseCaptured = false;
     bool animationsInitialized = false;
@@ -144,12 +140,8 @@ public:
             else if (registry->GetEntityName(e) == "ChronoD") {
                 targetChronoDEntity = e;
             }
-            else if (registry->GetEntityName(e) == "Enemy") {
-                targetEnemy = e;
-            }
-            else if (registry->GetEntityName(e) == "Plateforme") {
-                targetPlateform = e;
-            }
+
+
         }
     }
 
@@ -251,41 +243,6 @@ public:
             auto& cameraTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
             auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
-            auto& targetEnemyTransform = registry->GetComponent<Engine::Components::Transform>(targetEnemy);
-            auto& targetPlateformTransform = registry->GetComponent<Engine::Components::Transform>(targetPlateform);
-
-            // Enemy Patrol
-            if (targetEnemyTransform.Position.z <= -0.9) invertEnemyDir = false;
-            if (targetEnemyTransform.Position.z >= 0.9) invertEnemyDir = true;
-
-            if (invertEnemyDir) {
-                targetEnemyTransform.Position.z -= 0.001;
-                targetEnemyTransform.Rotation.y = 180;
-            }
-            if (!invertEnemyDir) {
-                targetEnemyTransform.Position.z += 0.001;
-                targetEnemyTransform.Rotation.y = 0;
-            }
-
-            // Plateform Pattern 
-            if (targetPlateformTransform.Position.x <= -0.9) {
-                invertPlateformDir = false;
-                targetPlateformTransform.Position.x = -0.89;
-            }
-            if (targetPlateformTransform.Position.x >= 0.9) {
-                invertPlateformDir = true;
-                targetPlateformTransform.Position.x = 0.89;
-            }
-
-            if (invertPlateformDir) {
-                targetPlateformTransform.Position.x -= 0.001;
-            }
-            if (!invertPlateformDir) {
-                targetPlateformTransform.Position.x += 0.001;
-            }
-
-            targetPlateformTransform.Position.y = 0.05;
-            targetPlateformTransform.Position.z = 0;
 
             // Camera Rotation
             cameraTransform.Rotation.x = pitch;
