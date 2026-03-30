@@ -1,7 +1,63 @@
 {
     "Entities": [
         {
-            "EntityID": 129,
+            "EntityID": 255,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline.dll"
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.6799999475479126,
+                    0.550000011920929,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    -0.4000000059604645
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 256,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -40,7 +96,7 @@
             },
             "Transform": {
                 "Position": [
-                    -0.699999988079071,
+                    0.3269914388656616,
                     0.05000000074505806,
                     0.0
                 ],
@@ -63,18 +119,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.3333333432674408
+                        "Weight": 0.5999999642372131
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.6666666865348816
+                        "Weight": 0.4000000059604645
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 130,
+            "EntityID": 257,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -116,13 +172,13 @@
             },
             "Transform": {
                 "Position": [
-                    0.3999975919723511,
-                    -9.387731552124023e-07,
-                    -6.346163900161628e-06
+                    0.38634049892425537,
+                    0.005001239478588104,
+                    0.7913301587104797
                 ],
                 "Rotation": [
                     0.0,
-                    0.0,
+                    180.0,
                     0.0020257849246263504
                 ],
                 "Scale": [
@@ -138,7 +194,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 131,
+            "EntityID": 258,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -146,13 +202,13 @@
             },
             "Transform": {
                 "Position": [
-                    -0.33107316493988037,
-                    0.3939623236656189,
-                    1.006964087486267
+                    0.6634889841079712,
+                    0.6845389008522034,
+                    0.6542911529541016
                 ],
                 "Rotation": [
-                    -15.500006675720215,
-                    -18.200008392333984,
+                    -32.10002136230469,
+                    45.399906158447266,
                     0.0
                 ],
                 "Scale": [
@@ -163,7 +219,7 @@
             }
         },
         {
-            "EntityID": 132,
+            "EntityID": 259,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -210,24 +266,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.0787380188703537
+                        "Weight": 0.3333333432674408
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.8773617148399353
+                        "Weight": 0.0
                     },
                     {
-                        "IsLooping": false,
+                        "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.04390023648738861
+                        "Weight": 0.6666666865348816
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 133,
+            "EntityID": 260,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -265,13 +321,13 @@
             },
             "Transform": {
                 "Position": [
-                    0.0,
-                    0.0,
-                    0.0
+                    -0.2824469208717346,
+                    0.005000002682209015,
+                    -0.5879313349723816
                 ],
                 "Rotation": [
                     0.0,
-                    0.0,
+                    -44.096031188964844,
                     0.0
                 ],
                 "Scale": [
@@ -282,7 +338,7 @@
             }
         },
         {
-            "EntityID": 134,
+            "EntityID": 261,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -303,7 +359,7 @@
             }
         },
         {
-            "EntityID": 135,
+            "EntityID": 262,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -328,7 +384,7 @@
             }
         },
         {
-            "EntityID": 136,
+            "EntityID": 263,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -369,7 +425,7 @@
             }
         },
         {
-            "EntityID": 137,
+            "EntityID": 264,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -410,7 +466,7 @@
             }
         },
         {
-            "EntityID": 138,
+            "EntityID": 265,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -451,7 +507,7 @@
             }
         },
         {
-            "EntityID": 139,
+            "EntityID": 266,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Numbers\\Number0_mesh.pa"
@@ -476,7 +532,7 @@
             }
         },
         {
-            "EntityID": 140,
+            "EntityID": 267,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Numbers\\Number1_mesh.pa"
@@ -501,7 +557,7 @@
             }
         },
         {
-            "EntityID": 141,
+            "EntityID": 268,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -542,13 +598,113 @@
                 ],
                 "Rotation": [
                     0.0,
-                    0.0,
+                    -0.0,
                     0.0
                 ],
                 "Scale": [
                     1.0,
                     1.0,
                     1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 269,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Repere1",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.10000000149011612,
+                    -0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582
+                ]
+            }
+        },
+        {
+            "EntityID": 270,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Repere2",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.10000000149011612,
+                    -0.10000000149011612
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582
+                ]
+            }
+        },
+        {
+            "EntityID": 271,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Repere3",
+            "Transform": {
+                "Position": [
+                    -0.10000000149011612,
+                    0.10000000149011612,
+                    -0.10000000149011612
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582
+                ]
+            }
+        },
+        {
+            "EntityID": 272,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Repere4",
+            "Transform": {
+                "Position": [
+                    -0.10000000149011612,
+                    0.10000000149011612,
+                    -0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582
                 ]
             }
         }

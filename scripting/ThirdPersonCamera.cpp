@@ -46,9 +46,9 @@ public:
 
     void OnCreate() override {
         FindTarget();
-        auto funcSys = engine->GetSystem<Engine::Systems::FunctionRegisterySystem>();
+        auto funcSys = engine->GetSystem<Engine::Systems::FunctionRegistrySystem>();
         if (!funcSys) {
-            std::cerr << "FunctionRegisterySystem not found!" << std::endl;
+            std::cerr << "FunctionRegistrySystem not found!" << std::endl;
             return;
         }
 
