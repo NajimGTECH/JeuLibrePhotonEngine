@@ -23,8 +23,6 @@ public:
 
     Engine::ECS::Entity targetEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
-    Engine::ECS::Entity targetChronoGEntity = Engine::ECS::NULL_ENTITY;
-    Engine::ECS::Entity targetChronoDEntity = Engine::ECS::NULL_ENTITY;
 
     bool isMouseCaptured = false;
     bool animationsInitialized = false;
@@ -134,14 +132,6 @@ public:
             else if (registry->GetEntityName(e) == "Floor") {
                 targetCameraEntity = e;
             }
-            else if (registry->GetEntityName(e) == "ChronoG") {
-                targetChronoGEntity = e;
-            }
-            else if (registry->GetEntityName(e) == "ChronoD") {
-                targetChronoDEntity = e;
-            }
-
-
         }
     }
 
@@ -202,7 +192,7 @@ public:
             std::string HitEntityName = registry->GetEntityName(hitResult.hitEntity);
             TerminalInstance->print("RayCast Hit " + HitEntityName);
 
-            if (HitEntityName == "Floor") {
+            if (HitEntityName == "Floor" || HitEntityName == "Plateforme") {
                 // Apply an upward impulse to the character body
                 physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 0.7f);
             }

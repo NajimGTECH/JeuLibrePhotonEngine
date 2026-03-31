@@ -11,24 +11,13 @@ class EnemyNativeScript : public Engine::Scripting::NativeScript {
 public:
 
     bool invertEnemyDir = false;
+    float speed = 0.2f;
 
     Engine::ECS::Entity targetEnemy = Engine::ECS::NULL_ENTITY;
 
     // --- Animation Paths (Replace these with your actual asset paths!) ---
     std::string forwardAnimEnemy = "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa";
     std::string attackAnimEnemy = "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa";
-
-    // 1.0 = full forward, 0.0 = idle, -1.0 = full backward
-    float currentMoveState = 0.0f;
-
-    //void OnInit() override {
-    //    Inspect("Distance", &distance);
-    //    Inspect("Sensitivity", &sensitivity);
-    //    Inspect("Move Speed", &moveSpeed);
-    //    Inspect("Height Offset", &targetHeightOffset);
-    //    Inspect("Invert X", &invertX);
-    //    Inspect("Invert Y", &invertY);
-    //}
 
     void OnCreate() override {
         FindTarget();
@@ -65,14 +54,13 @@ public:
         if (targetEnemyTransform.Position.z >= 0.9) invertEnemyDir = true;
 
         if (invertEnemyDir) {
-            targetEnemyTransform.Position.z -= 0.001;
+            targetEnemyTransform.Position.z -= speed * dt;
             targetEnemyTransform.Rotation.y = 180;
         }
         if (!invertEnemyDir) {
-            targetEnemyTransform.Position.z += 0.001;
+            targetEnemyTransform.Position.z += speed * dt;
             targetEnemyTransform.Rotation.y = 0;
         }
-        std::cout << "Update enemy\n";
     }
 };
 
