@@ -13,6 +13,10 @@ public:
     bool invertPlateformDir = false;
     float speed = 0.3f;
     float val = 0.1f;
+    float distancePatrol = 0.7f;
+    float securityDistance = 0.69f;
+    float posY = 0.05f;
+    float posZ = 0.f;
 
     Engine::ECS::Entity targetPlateform = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCharacter = Engine::ECS::NULL_ENTITY;
@@ -50,12 +54,12 @@ public:
         auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetCharacter);
 
         // Plateform Pattern 
-        if (targetPlateformTransform.Position.x <= -0.9) {
-            targetPlateformTransform.Position.x = -0.89;
+        if (targetPlateformTransform.Position.x <= -distancePatrol) {
+            targetPlateformTransform.Position.x = -securityDistance;
             invertPlateformDir = false;
         }
-        if (targetPlateformTransform.Position.x >= 0.9) {
-            targetPlateformTransform.Position.x = 0.89;
+        if (targetPlateformTransform.Position.x >= distancePatrol) {
+            targetPlateformTransform.Position.x = securityDistance;
             invertPlateformDir = true;
         }
 
@@ -75,8 +79,8 @@ public:
             }
         }
 
-        targetPlateformTransform.Position.y = 0.05;
-        targetPlateformTransform.Position.z = 0;
+        targetPlateformTransform.Position.y = posY;
+        targetPlateformTransform.Position.z = posZ;
     }
 };
 

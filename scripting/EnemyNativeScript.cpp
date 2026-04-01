@@ -12,6 +12,7 @@ public:
 
     bool invertEnemyDir = false;
     float speed = 0.2f;
+    float distancePatrol = 0.7f;
 
     Engine::ECS::Entity targetEnemy = Engine::ECS::NULL_ENTITY;
 
@@ -50,8 +51,8 @@ public:
         auto& targetEnemyTransform = registry->GetComponent<Engine::Components::Transform>(targetEnemy);
 
         // Enemy Patrol
-        if (targetEnemyTransform.Position.z <= -0.9) invertEnemyDir = false;
-        if (targetEnemyTransform.Position.z >= 0.9) invertEnemyDir = true;
+        if (targetEnemyTransform.Position.z <= -distancePatrol) invertEnemyDir = false;
+        if (targetEnemyTransform.Position.z >= distancePatrol) invertEnemyDir = true;
 
         if (invertEnemyDir) {
             targetEnemyTransform.Position.z -= speed * dt;
