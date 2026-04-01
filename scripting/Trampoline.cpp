@@ -29,6 +29,9 @@ public:
             if (registry->GetEntityName(e) == "Trampoline") {
                 targetTrampoline = e;
             }
+            //else if (registry->GetEntityName(e) == "Trampoline-2") {
+            //    targetTrampoline = e;
+            //}
             else if (registry->GetEntityName(e) == "Character") {
                 targetCharacter = e;
             }
