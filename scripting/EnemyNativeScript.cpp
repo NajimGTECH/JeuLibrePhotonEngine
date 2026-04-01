@@ -56,11 +56,11 @@ public:
 
         if (invertEnemyDir) {
             targetEnemyTransform.Position.z -= speed * dt;
-            targetEnemyTransform.Rotation.y = 180;
+            targetEnemyTransform.Rotation.y = 0;
         }
         if (!invertEnemyDir) {
             targetEnemyTransform.Position.z += speed * dt;
-            targetEnemyTransform.Rotation.y = 0;
+            targetEnemyTransform.Rotation.y = 180;
         }
     }
 };

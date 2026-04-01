@@ -9,7 +9,7 @@
 
 class CameraNativeScript : public Engine::Scripting::NativeScript {
 public:
-    float distance = 1.1f;
+    float distance = 2.f;
     float sensitivity = 0.1f;
     float moveSpeed = 0.3f; // Note: Increased default as this is now a velocity (m/s), not a frame delta
     float animationBlendSpeed = 10.0f; // How fast animations transition
@@ -187,6 +187,7 @@ public:
             }
         }
 
+        /*
         // jump detector follow player
         auto& targetDetectorTransform = registry->GetComponent<Engine::Components::Transform>(targetFloorDetector);
         auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
@@ -207,10 +208,10 @@ public:
         }
 
         // JUMP LOGIC
-        if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem && canJump) {
+        if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem) {
             physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 0.7f);
         }
-
+        */
         /*
         if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem) {
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);

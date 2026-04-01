@@ -15,6 +15,8 @@ public:
     Engine::ECS::Entity targetFloor = Engine::ECS::NULL_ENTITY;
 
     float val = 0.1f;
+    float forceJump = 3.5f;
+    float heightJump = 0.5f;
 
     bool isGrounded = false;
 
@@ -51,22 +53,21 @@ public:
         }
 
         auto& targetTrampolineTransform = registry->GetComponent<Engine::Components::Transform>(targetTrampoline);
-        //auto& targetTrampolineCollider = registry->GetComponent<Engine::Components::RigidBody>(targetTrampoline);
         auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetCharacter);
         auto& targetFloorTransform = registry->GetComponent<Engine::Components::Transform>(targetCharacter);
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
 
-        if (targetCharacterTransform.Position.y <= 0.03) {
-            isGrounded = true;
-        }
-        else {
-            isGrounded = false;
-        }
+        //if (targetCharacterTransform.Position.y <= 0.03) {
+        //    isGrounded = true;
+        //}
+        //else {
+        //    isGrounded = false;
+        //}
 
-        if (isGrounded && targetCharacterTransform.Position.x <= targetTrampolineTransform.Position.x + val && targetCharacterTransform.Position.z <= targetTrampolineTransform.Position.z + val &&
-            targetCharacterTransform.Position.x >= targetTrampolineTransform.Position.x - val && targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.z - val) {
-            physicsSystem->AddImpulse(targetCharacter, targetCharacterTransform.Up + 0.001f);
+        if (targetCharacterTransform.Position.x <= targetTrampolineTransform.Position.x + val && targetCharacterTransform.Position.z <= targetTrampolineTransform.Position.z + val &&
+            targetCharacterTransform.Position.x >= targetTrampolineTransform.Position.x - val && targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.z - val && targetCharacterTransform.Position.y <= targetTrampolineTransform.Position.y + heightJump) {
+            physicsSystem->AddImpulse(targetCharacter, targetCharacterTransform.Up * forceJump * dt);
         }
     }
 };
