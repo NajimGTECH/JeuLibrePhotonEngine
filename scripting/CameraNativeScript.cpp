@@ -21,8 +21,12 @@ public:
     bool invertX = false;
     bool invertY = false;
 
+    bool canJump = false;
+
     Engine::ECS::Entity targetEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
+    Engine::ECS::Entity targetFloorDetector = Engine::ECS::NULL_ENTITY;
+    Engine::ECS::Entity targetPlatform = Engine::ECS::NULL_ENTITY;
 
     bool isMouseCaptured = false;
     bool animationsInitialized = false;
@@ -132,6 +136,12 @@ public:
             else if (registry->GetEntityName(e) == "Floor") {
                 targetCameraEntity = e;
             }
+            else if (registry->GetEntityName(e) == "FloorDetector") {
+                targetFloorDetector = e;
+            }
+            else if (registry->GetEntityName(e) == "Plateforme") {
+                targetPlatform = e;
+            }
         }
     }
 
@@ -177,7 +187,29 @@ public:
             }
         }
 
+        // jump detector follow player
+        auto& targetDetectorTransform = registry->GetComponent<Engine::Components::Transform>(targetFloorDetector);
+        auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
+        auto& targetFloorTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
+        auto& targetPlatformTransform = registry->GetComponent<Engine::Components::Transform>(targetPlatform);
+        
+        targetDetectorTransform.Position.y = targetTransform.Position.y - 0.03f;
+        targetDetectorTransform.Position.x = targetTransform.Position.x;
+        targetDetectorTransform.Position.z = targetTransform.Position.z;
+
+        if (targetDetectorTransform.Position.y <= targetFloorTransform.Position.y || targetDetectorTransform.Position.y <= targetPlatformTransform.Position.y) {
+            canJump = true;
+        }
+        else {
+            canJump = false;
+        }
+
         // JUMP LOGIC
+        if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem && canJump) {
+            physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 0.7f);
+        }
+
+        /*
         if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem) {
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
 
@@ -196,7 +228,7 @@ public:
                 // Apply an upward impulse to the character body
                 physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 0.7f);
             }
-        }
+        }*/
 
         if (!isMouseCaptured && Engine::Core::UIState::IsMouseCaptured()) {
             return;

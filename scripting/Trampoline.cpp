@@ -66,7 +66,7 @@ public:
 
         if (isGrounded && targetCharacterTransform.Position.x <= targetTrampolineTransform.Position.x + val && targetCharacterTransform.Position.z <= targetTrampolineTransform.Position.z + val &&
             targetCharacterTransform.Position.x >= targetTrampolineTransform.Position.x - val && targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.z - val) {
-            physicsSystem->AddImpulse(targetCharacter, targetCharacterTransform.Up * 1.f);
+            physicsSystem->AddImpulse(targetCharacter, targetCharacterTransform.Up + 0.001f);
         }
     }
 };

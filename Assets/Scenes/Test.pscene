@@ -1,7 +1,7 @@
 {
     "Entities": [
         {
-            "EntityID": 577,
+            "EntityID": 589,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -57,7 +57,7 @@
             }
         },
         {
-            "EntityID": 578,
+            "EntityID": 590,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -119,18 +119,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.5999999642372131
+                        "Weight": 0.7142857313156128
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.4000000059604645
+                        "Weight": 0.2857142984867096
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 579,
+            "EntityID": 591,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -194,7 +194,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 580,
+            "EntityID": 592,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -219,7 +219,7 @@
             }
         },
         {
-            "EntityID": 581,
+            "EntityID": 593,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -266,24 +266,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.20000000298023224
+                        "Weight": 0.2494828701019287
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.0
+                        "Weight": 0.7505156397819519
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.800000011920929
+                        "Weight": 1.5019342072264408e-06
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 582,
+            "EntityID": 594,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -338,7 +338,7 @@
             }
         },
         {
-            "EntityID": 583,
+            "EntityID": 595,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -359,7 +359,7 @@
             }
         },
         {
-            "EntityID": 584,
+            "EntityID": 596,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -384,7 +384,7 @@
             }
         },
         {
-            "EntityID": 585,
+            "EntityID": 597,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -425,7 +425,7 @@
             }
         },
         {
-            "EntityID": 586,
+            "EntityID": 598,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -466,7 +466,7 @@
             }
         },
         {
-            "EntityID": 587,
+            "EntityID": 599,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -507,57 +507,7 @@
             }
         },
         {
-            "EntityID": 588,
-            "MeshRenderer": {
-                "Active": true,
-                "Path": "Assets\\Numbers\\Number0_mesh.pa"
-            },
-            "Name": "ChronoG",
-            "Transform": {
-                "Position": [
-                    0.0,
-                    0.30000001192092896,
-                    0.0
-                ],
-                "Rotation": [
-                    0.0,
-                    -0.0,
-                    0.0
-                ],
-                "Scale": [
-                    0.0010000000474974513,
-                    0.0010000000474974513,
-                    0.0010000000474974513
-                ]
-            }
-        },
-        {
-            "EntityID": 589,
-            "MeshRenderer": {
-                "Active": true,
-                "Path": "Assets\\Numbers\\Number1_mesh.pa"
-            },
-            "Name": "ChronoD",
-            "Transform": {
-                "Position": [
-                    0.10000000149011612,
-                    0.30000001192092896,
-                    0.0
-                ],
-                "Rotation": [
-                    0.0,
-                    -0.0,
-                    0.0
-                ],
-                "Scale": [
-                    0.0010000000474974513,
-                    0.0010000000474974513,
-                    0.0010000000474974513
-                ]
-            }
-        },
-        {
-            "EntityID": 590,
+            "EntityID": 600,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -595,6 +545,54 @@
                     0.0,
                     0.0,
                     0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 601,
+            "Name": "FloorDetector",
+            "RigidBody": {
+                "BoxSize": [
+                    0.07500000298023224,
+                    0.0010000000474974513,
+                    0.07500000298023224
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 0.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    true,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.20000000298023224,
+                    0.0,
+                    -0.7000000476837158
                 ],
                 "Rotation": [
                     0.0,
