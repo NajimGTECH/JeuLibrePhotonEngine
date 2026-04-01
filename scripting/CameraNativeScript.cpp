@@ -192,9 +192,11 @@ public:
         auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
         auto& targetFloorTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
         auto& targetPlatformTransform = registry->GetComponent<Engine::Components::Transform>(targetPlatform);
+
+        std::cout << targetTransform.Position.y << std::endl;
         
-        targetDetectorTransform.Position.y = targetTransform.Position.y - 0.03f;
         targetDetectorTransform.Position.x = targetTransform.Position.x;
+        targetDetectorTransform.Position.y = targetTransform.Position.y - 0.02;
         targetDetectorTransform.Position.z = targetTransform.Position.z;
 
         if (targetDetectorTransform.Position.y <= targetFloorTransform.Position.y || targetDetectorTransform.Position.y <= targetPlatformTransform.Position.y) {

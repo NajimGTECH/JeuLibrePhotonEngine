@@ -1,7 +1,7 @@
 {
     "Entities": [
         {
-            "EntityID": 589,
+            "EntityID": 7,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -57,7 +57,7 @@
             }
         },
         {
-            "EntityID": 590,
+            "EntityID": 8,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -130,7 +130,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 591,
+            "EntityID": 9,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -194,7 +194,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 592,
+            "EntityID": 10,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -219,7 +219,7 @@
             }
         },
         {
-            "EntityID": 593,
+            "EntityID": 11,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -283,7 +283,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 594,
+            "EntityID": 12,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -338,7 +338,7 @@
             }
         },
         {
-            "EntityID": 595,
+            "EntityID": 13,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -359,7 +359,7 @@
             }
         },
         {
-            "EntityID": 596,
+            "EntityID": 14,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -384,7 +384,7 @@
             }
         },
         {
-            "EntityID": 597,
+            "EntityID": 15,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -425,7 +425,7 @@
             }
         },
         {
-            "EntityID": 598,
+            "EntityID": 16,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -466,7 +466,7 @@
             }
         },
         {
-            "EntityID": 599,
+            "EntityID": 17,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -507,7 +507,7 @@
             }
         },
         {
-            "EntityID": 600,
+            "EntityID": 18,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -559,7 +559,7 @@
             }
         },
         {
-            "EntityID": 601,
+            "EntityID": 19,
             "Name": "FloorDetector",
             "RigidBody": {
                 "BoxSize": [
@@ -569,7 +569,7 @@
                 ],
                 "Height": 1.0,
                 "IsStatic": false,
-                "Mass": 0.0,
+                "Mass": 0.0010000000474974513,
                 "Offset": [
                     0.0,
                     0.0,
