@@ -1,5 +1,6 @@
 #include "script_pch.h"
 #include "Systems/AnimatorSystem.h" // Include AnimatorSystem to control weights
+#include "IALogicEnemyComponent.h"
 
 #ifdef _WIN32
 #define SCRIPT_API __declspec(dllexport)
@@ -10,9 +11,9 @@
 class EnemyNativeScript : public Engine::Scripting::NativeScript {
 public:
 
-    bool invertEnemyDir = false;
-    float speed = 0.2f;
-    float distancePatrol = 0.7f;
+    //bool invertEnemyDir = false;
+    //float speed = 0.2f;
+    //float distancePatrol = 0.7f;
 
     Engine::ECS::Entity targetEnemy = Engine::ECS::NULL_ENTITY;
 
@@ -41,13 +42,15 @@ public:
             }
         }
 
-        auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
-
         if (targetEnemy == Engine::ECS::NULL_ENTITY) {
             FindTarget();
             if (targetEnemy == Engine::ECS::NULL_ENTITY) return;
         }
 
+        IALogicEnemyComponent IAEnemy;
+
+        IAEnemy.Patrol(targetEnemy);
+        /*
         auto& targetEnemyTransform = registry->GetComponent<Engine::Components::Transform>(targetEnemy);
 
         // Enemy Patrol
@@ -61,7 +64,7 @@ public:
         if (!invertEnemyDir) {
             targetEnemyTransform.Position.z += speed * dt;
             targetEnemyTransform.Rotation.y = 180;
-        }
+        }*/
     }
 };
 

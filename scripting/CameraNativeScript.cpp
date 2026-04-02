@@ -9,7 +9,7 @@
 
 class CameraNativeScript : public Engine::Scripting::NativeScript {
 public:
-    float distance = 2.f;
+    float distance = 1.8f;
     float sensitivity = 0.1f;
     float moveSpeed = 0.3f; // Note: Increased default as this is now a velocity (m/s), not a frame delta
     float animationBlendSpeed = 10.0f; // How fast animations transition
@@ -135,9 +135,6 @@ public:
             }
             else if (registry->GetEntityName(e) == "Floor") {
                 targetCameraEntity = e;
-            }
-            else if (registry->GetEntityName(e) == "FloorDetector") {
-                targetFloorDetector = e;
             }
             else if (registry->GetEntityName(e) == "Plateforme") {
                 targetPlatform = e;
