@@ -6,7 +6,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 29,
+            "EntityID": 167,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -31,7 +31,7 @@
             }
         },
         {
-            "EntityID": 30,
+            "EntityID": 168,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -78,24 +78,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 2.0508117813733406e-05
+                        "Weight": 0.39914312958717346
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.9945231676101685
+                        "Weight": 0.5997825860977173
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.005456358194351196
+                        "Weight": 0.0010742847807705402
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey_skeleton.pa"
             },
-            "EntityID": 31,
+            "EntityID": 169,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -150,7 +150,7 @@
             }
         },
         {
-            "EntityID": 32,
+            "EntityID": 170,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -171,7 +171,7 @@
             }
         },
         {
-            "EntityID": 33,
+            "EntityID": 171,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -216,14 +216,14 @@
                     0.0
                 ],
                 "Scale": [
+                    0.6000000238418579,
                     1.0,
-                    1.0,
-                    1.0
+                    0.6000000238418579
                 ]
             }
         },
         {
-            "EntityID": 34,
+            "EntityID": 172,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -264,7 +264,7 @@
             }
         },
         {
-            "EntityID": 35,
+            "EntityID": 173,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -305,7 +305,7 @@
             }
         },
         {
-            "EntityID": 36,
+            "EntityID": 174,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -346,7 +346,7 @@
             }
         },
         {
-            "EntityID": 37,
+            "EntityID": 175,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cheese_mesh.pa"
@@ -375,7 +375,7 @@
             }
         },
         {
-            "EntityID": 38,
+            "EntityID": 176,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Coin_mesh.pa"
@@ -404,10 +404,10 @@
             }
         },
         {
-            "EntityID": 39,
+            "EntityID": 177,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cheese_mesh.pa"
+                "Path": "Assets\\Default\\Cone_mesh.pa"
             },
             "Name": "Trap",
             "NativeScript": {
@@ -417,8 +417,240 @@
             "Transform": {
                 "Position": [
                     -0.30000001192092896,
-                    0.05000000074505806,
-                    0.20000000298023224
+                    0.029999999329447746,
+                    0.21000000834465027
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 178,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.24000000953674316,
+                    0.029999999329447746,
+                    0.21000000834465027
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 179,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.18000000715255737,
+                    0.029999999329447746,
+                    0.21000000834465027
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 180,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.18000000715255737,
+                    0.029999999329447746,
+                    0.27000001072883606
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 181,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.24000000953674316,
+                    0.029999999329447746,
+                    0.27000001072883606
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 182,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy_Copy_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.30000001192092896,
+                    0.029999999329447746,
+                    0.27000001072883606
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 183,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy_Copy_Copy_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.30000001192092896,
+                    0.029999999329447746,
+                    0.33000001311302185
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 184,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy_Copy_Copy_Copy_Copy_Copy_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.18000000715255737,
+                    0.029999999329447746,
+                    0.33000001311302185
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 185,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cone_mesh.pa"
+            },
+            "Name": "Trap_Copy_Copy_Copy_Copy_Copy_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trap.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -0.24000000953674316,
+                    0.029999999329447746,
+                    0.33000001311302185
                 ],
                 "Rotation": [
                     0.0,

@@ -180,7 +180,7 @@ public:
             TerminalInstance->info("'K' pressed, attempting to call DebugDrawMeshGenerator.DebugLog...");
             
             // 1. Get the registry
-            auto registry = engine->GetSystem<Systems::FunctionRegisterySystem>();
+            auto registry = engine->GetSystem<Systems::FunctionRegistrySystem>();
             
             // 2. Call the function by name, passing arguments in a vector
             if (registry) {

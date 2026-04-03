@@ -11,18 +11,18 @@
 #define SCRIPT_API __attribute__((visibility("default")))
 #endif
 
-class ItemRotator : public Engine::Scripting::NativeScript {
+class Trap : public Engine::Scripting::NativeScript {
 public:
     //==================== Public: functions ====================
 
     void OnInit() override {
-        Inspect("Rotation Speed", &rotationSpeed);
+        Inspect("Damage", &damage);
         Inspect("Detect Distance", &detectDistance);
     }
 
     void OnDestroy() override {
         if (m_funcSys) {
-            m_funcSys->Unregister("Interact");
+            m_funcSys->Unregister("Activate");
         }
     }
 
@@ -39,7 +39,7 @@ public:
         }
 
         if (character == Engine::ECS::NULL_ENTITY) {
-            TerminalInstance->error("ItemRotator: Character not found!");
+            TerminalInstance->error("Trap: Character not found!");
         }
 
         // Validate system
@@ -49,33 +49,31 @@ public:
         }
 
         // Register function
-        m_funcSys->Register("Interact", [this](std::vector<std::any> args) -> std::any {
+        m_funcSys->Register("Activate", [this](std::vector<std::any> args) -> std::any {
             if (args.size() == 1 && args[0].type() == typeid(Engine::ECS::Entity)) {
                 Engine::ECS::Entity entity = std::any_cast<Engine::ECS::Entity>(args[0]);
                 registry->DestroyEntity(entity);
-            } else {
-                std::cerr << "[Interact] Invalid type\n";
+                TerminalInstance->info("Trap activated!");
+            }
+            else {
+                std::cerr << "[Activate] Invalid type\n";
             }
             return {};
-        });
+            });
     }
 
     void OnUpdate(float dt) override {
         if (!registry->HasComponent<Engine::Components::Transform>(entityID))
             return;
 
-        auto& transform = registry->GetComponent<Engine::Components::Transform>(entityID);
-
-        transform.Rotation.y += rotationSpeed * dt;
-        if (transform.Rotation.y > 360.0f)
-            transform.Rotation.y -= 360.0f;
+        auto& trapTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
         if (!physicsSystem || character == Engine::ECS::NULL_ENTITY)
             return;
 
-        glm::vec3 start = transform.Position;
-        glm::vec3 end = transform.Position + glm::vec3(0.0f, detectDistance, 0.0f);
+        glm::vec3 start = trapTransform.Position;
+        glm::vec3 end = trapTransform.Position + glm::vec3(0.0f, detectDistance, 0.0f);
 
         Engine::Systems::PhysicsUtils::RaycastHit hit = physicsSystem->Raycast(
             start,
@@ -85,16 +83,16 @@ public:
         );
 
         if (hit.hitEntity == character) {
-            TerminalInstance->info("Item collected via Raycast!");
-            m_funcSys->Call("Interact", { entityID });
+            TerminalInstance->info("Trap detects player!");
+            m_funcSys->Call("Activate", { character });
         }
     }
 
 public:
     //==================== Public: members ====================
 
-    float rotationSpeed = 180.0f;
-    float detectDistance = 0.01f;
+    int damage = 100;
+    float detectDistance = 0.2f;
     Engine::ECS::Entity character = Engine::ECS::NULL_ENTITY;
 
 private:
@@ -109,5 +107,5 @@ private:
 };
 
 extern "C" SCRIPT_API Engine::Scripting::NativeScript* CreateScript() {
-    return new ItemRotator();
+    return new Trap();
 }

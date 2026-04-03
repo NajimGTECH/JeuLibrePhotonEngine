@@ -1,5 +1,5 @@
 #include "script_pch.h"
-#include "Systems/AnimatorSystem.h" // Include AnimatorSystem to control weights
+#include "Systems/AnimatorSystem.h"
 
 #ifdef _WIN32
     #define SCRIPT_API __declspec(dllexport)
@@ -48,9 +48,9 @@ public:
 
     void OnCreate() override {
         FindTarget();
-        auto funcSys = engine->GetSystem<Engine::Systems::FunctionRegisterySystem>();
+        auto funcSys = engine->GetSystem<Engine::Systems::FunctionRegistrySystem>();
         if (!funcSys) {
-            std::cerr << "FunctionRegisterySystem not found!" << std::endl;
+            std::cerr << "FunctionRegistrySystem not found!" << std::endl;
             return;
         }
 

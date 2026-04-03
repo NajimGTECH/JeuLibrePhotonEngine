@@ -34,7 +34,7 @@
 #include "Systems/PhysicsSystem.h"
 #include "Systems/RenderSystem.h"
 #include "Systems/TerminalSystem.h"
-#include "Systems/FunctionRegisterySystem.h"
+#include "Systems/FunctionRegistrySystem.h"
 
 // --- Components ---
 // Include commonly used components so scripts don't have to manually include them
