@@ -78,19 +78,19 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.39914312958717346
+                        "Weight": 0.6234070658683777
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.5997825860977173
+                        "Weight": 0.37491506338119507
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.0010742847807705402
+                        "Weight": 0.0016778861172497272
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey_skeleton.pa"
@@ -661,6 +661,35 @@
                     0.029999999329447746,
                     0.029999999329447746,
                     0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 186,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Box",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Box.dll"
+            },
+            "Transform": {
+                "Position": [
+                    0.20000000298023224,
+                    0.03999999910593033,
+                    0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.03999999910593033,
+                    0.03999999910593033,
+                    0.03999999910593033
                 ]
             }
         }

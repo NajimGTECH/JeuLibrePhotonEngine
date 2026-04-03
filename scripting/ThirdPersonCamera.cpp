@@ -9,7 +9,7 @@
 
 class ThirdPersonCamera : public Engine::Scripting::NativeScript {
 public:
-    float distance = 1.5f;
+    float distance = 0.5f;
     float cameraSpeed = 75.0f;
     float moveSpeed = 0.3f; // Note: Increased default as this is now a velocity (m/s), not a frame delta
     float animationBlendSpeed = 10.0f; // How fast animations transition
