@@ -1,0 +1,1213 @@
+{
+    "Entities": [
+        {
+            "EntityID": 1844,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Cube-3",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.5999999642372131,
+                    0.550000011920929,
+                    -0.25
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.25,
+                    0.05000000074505806,
+                    0.6000000238418579
+                ]
+            }
+        },
+        {
+            "EntityID": 1845,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline.dll"
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.017000000923871994,
+                    0.09999999403953552
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 1846,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Plane_mesh.pa"
+            },
+            "Name": "Plateforme",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/PlateformNativeScript.dll"
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    0.009999999776482582,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 100000000.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    true,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    true,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.32513657212257385,
+                    0.05000000074505806,
+                    2.430690828723029e-21
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    1.0,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": false,
+                        "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.0694444552063942
+                    },
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.930555522441864
+                    }
+                ],
+                "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
+            },
+            "EntityID": 1847,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Enemy\\Enemy_mat_Ch19_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Enemy\\Enemy_mesh.pa"
+            },
+            "Name": "Enemy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/EnemyNativeScript.dll"
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.07500000298023224,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.8199183344841003,
+                    0.005000002682209015,
+                    -0.625153124332428
+                ],
+                "Rotation": [
+                    -180.0,
+                    180.0,
+                    -180.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
+                ]
+            }
+        },
+        {
+            "Camera": {
+                "FarPlane": 1000.0,
+                "Fov": 80.0,
+                "NearPlane": 0.009999999776482582
+            },
+            "EntityID": 1848,
+            "Name": "Main Camera",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/CameraNativeScript.dll"
+            },
+            "Transform": {
+                "Position": [
+                    -1.0007498264312744,
+                    0.3042326271533966,
+                    -0.408397912979126
+                ],
+                "Rotation": [
+                    -10.699965476989746,
+                    -112.1999740600586,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1849,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.0,
+                "OrthoSize": 1.0,
+                "Range": 5.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 0
+            },
+            "Name": "Sun",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
+                        "Weight": 0.18666666746139526
+                    },
+                    {
+                        "IsLooping": false,
+                        "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
+                        "Weight": 0.06666666269302368
+                    },
+                    {
+                        "IsLooping": false,
+                        "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
+                        "Weight": 0.746666669845581
+                    }
+                ],
+                "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
+            },
+            "EntityID": 1850,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Mousey\\Mousey_mat_Ch14_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Mousey\\Mousey_mesh.pa"
+            },
+            "Name": "Character",
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 0.20100000500679016,
+                "Offset": [
+                    0.0,
+                    0.07500000298023224,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.2824469208717346,
+                    0.005000002682209015,
+                    -0.5879313349723816
+                ],
+                "Rotation": [
+                    0.0,
+                    -44.096031188964844,
+                    0.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
+                ]
+            }
+        },
+        {
+            "EntityID": 1851,
+            "Name": "AnimEditor_Preview",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1852,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-1",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.949999988079071,
+                    0.05000000074505806,
+                    -0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1853,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    2.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Red",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    1.4000000953674316,
+                    -0.8999999761581421
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1854,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    2.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Blue",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    1.100000023841858,
+                    1.100000023841858
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1855,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    2.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Green",
+            "Transform": {
+                "Position": [
+                    -0.30000001192092896,
+                    1.2000000476837158,
+                    0.10000000149011612
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1856,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Plane_mesh.pa"
+            },
+            "Name": "Floor",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    0.009999999776482582,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1857,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "House-3",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.10000000149011612,
+                    0.3440000116825104,
+                    -0.6000000238418579
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.25,
+                    0.3499999940395355,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 1858,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.949999988079071,
+                    0.05000000074505806,
+                    -2.2351741790771484e-08
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1859,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-3",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.05000000074505806,
+                    -0.949999988079071
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.049999989569187164,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1860,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-4",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.05000000074505806,
+                    0.949999988079071
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.049999989569187164,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 1861,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "House-1",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    0.15000000596046448,
+                    0.5
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 1862,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "House-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.20000000298023224,
+                    0.5
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.44999998807907104,
+                    0.20000000298023224,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 1863,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Cube-1",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.4000000059604645,
+                    0.44999998807907104,
+                    0.3499999940395355
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 1864,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Cube-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.30000001192092896,
+                    0.44999998807907104,
+                    0.30000001192092896
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    0.05000000074505806
+                ]
+            }
+        },
+        {
+            "EntityID": 1865,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Slide",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.5700000524520874,
+                    0.29600000381469727,
+                    0.5000000596046448
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    22.89997100830078
+                ],
+                "Scale": [
+                    0.1599999964237213,
+                    0.04999999329447746,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 1867,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline2",
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.30000001192092896,
+                    0.3830000162124634,
+                    0.3999999761581421
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 1868,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Slide-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.5299999713897705,
+                    0.6000000238418579,
+                    -0.6000000238418579
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    -14.0
+                ],
+                "Scale": [
+                    0.20000000298023224,
+                    0.05000000074505806,
+                    0.25
+                ]
+            }
+        }
+    ]
+}

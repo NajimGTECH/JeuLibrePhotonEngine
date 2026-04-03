@@ -25,7 +25,7 @@ public:
 private:
     // --- System Pointers ---
     // Systems are safe to cache as they persist for the engine's lifetime
-    Systems::FunctionRegisterySystem* funcRegistry = nullptr;
+    Systems::FunctionRegistrySystem* funcRegistry = nullptr;
     Systems::TerminalSystem* terminal = nullptr;
     Systems::InputSystem* inputSystem = nullptr; // Assuming this matches the new System architecture
 
@@ -44,11 +44,11 @@ public:
         // --- 1. Get Core Systems ---
         // Retrieved via the new engine system manager
         terminal = engine->GetSystem<Systems::TerminalSystem>();
-        funcRegistry = engine->GetSystem<Systems::FunctionRegisterySystem>();
+        funcRegistry = engine->GetSystem<Systems::FunctionRegistrySystem>();
         inputSystem = engine->GetSystem<Systems::InputSystem>();
 
         if (!funcRegistry && terminal) {
-            terminal->error("TemplateV3: FunctionRegisterySystem not found!");
+            terminal->error("TemplateV3: FunctionRegistrySystem not found!");
         }
 
         // --- 1.5. Load Configuration ---
