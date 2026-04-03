@@ -10,15 +10,13 @@
 class Trampoline : public Engine::Scripting::NativeScript {
 public:
 
-    Engine::ECS::Entity targetTrampoline = Engine::ECS::NULL_ENTITY;
+    //Engine::ECS::Entity targetTrampoline = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCharacter = Engine::ECS::NULL_ENTITY;
-    Engine::ECS::Entity targetFloor = Engine::ECS::NULL_ENTITY;
 
     float val = 0.1f;
     float forceJump = 3.5f;
     float heightJump = 0.5f;
 
-    bool isGrounded = false;
 
     void OnCreate() override {
         FindTarget();
@@ -26,17 +24,11 @@ public:
 
     void FindTarget() {
         for (auto e : registry->View<Engine::Components::Transform>()) {
-            if (registry->GetEntityName(e) == "Trampoline") {
-                targetTrampoline = e;
-            }
-            //else if (registry->GetEntityName(e) == "Trampoline-2") {
+            //if (registry->GetEntityName(e) == "Trampoline") {
             //    targetTrampoline = e;
             //}
-            else if (registry->GetEntityName(e) == "Character") {
+            if (registry->GetEntityName(e) == "Character") {
                 targetCharacter = e;
-            }
-            else if (registry->GetEntityName(e) == "Floor") {
-                targetFloor = e;
             }
         }
     }
@@ -50,23 +42,15 @@ public:
             }
         }
 
-        if (targetTrampoline == Engine::ECS::NULL_ENTITY || targetCharacter == Engine::ECS::NULL_ENTITY || targetFloor == Engine::ECS::NULL_ENTITY) {
+        if (/*targetTrampoline == Engine::ECS::NULL_ENTITY || */targetCharacter == Engine::ECS::NULL_ENTITY) {
             FindTarget();
-            if (targetTrampoline == Engine::ECS::NULL_ENTITY || targetCharacter == Engine::ECS::NULL_ENTITY || targetFloor == Engine::ECS::NULL_ENTITY) return;
+            if (/*targetTrampoline == Engine::ECS::NULL_ENTITY || */targetCharacter == Engine::ECS::NULL_ENTITY) return;
         }
 
-        auto& targetTrampolineTransform = registry->GetComponent<Engine::Components::Transform>(targetTrampoline);
+        auto& targetTrampolineTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
         auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetCharacter);
-        auto& targetFloorTransform = registry->GetComponent<Engine::Components::Transform>(targetCharacter);
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
-
-        //if (targetCharacterTransform.Position.y <= 0.03) {
-        //    isGrounded = true;
-        //}
-        //else {
-        //    isGrounded = false;
-        //}
 
         if (targetCharacterTransform.Position.x <= targetTrampolineTransform.Position.x + val && targetCharacterTransform.Position.z <= targetTrampolineTransform.Position.z + val &&
             targetCharacterTransform.Position.x >= targetTrampolineTransform.Position.x - val && targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.z - val && targetCharacterTransform.Position.y <= targetTrampolineTransform.Position.y + heightJump) {
