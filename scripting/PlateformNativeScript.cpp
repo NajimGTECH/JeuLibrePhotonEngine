@@ -11,7 +11,7 @@ class PlateformNativeScript : public Engine::Scripting::NativeScript {
 public:
 
     bool invertPlateformDir = false;
-    float speed = 0.3f;
+    float speed = 0.2f;
     float val = 0.1f;
     float distancePatrol = 0.7f;
     float securityDistance = 0.69f;
@@ -22,7 +22,7 @@ public:
     Engine::ECS::Entity targetPlateform = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCharacter = Engine::ECS::NULL_ENTITY;
 
-    void PlatformPattern(char AxePattern, Engine::ECS::Entity targetPl, Engine::ECS::Entity targetChar) {
+    void PlatformPattern(char AxePattern, Engine::ECS::Entity targetPl, Engine::ECS::Entity targetChar, float dt) {
 
         // fais avec un switch et il faut mettre un char en mode x,y ou z et ca fais le pattern voulu pour la plateforme
 
@@ -44,24 +44,23 @@ public:
             if (invertPlateformDir) {
                 targetPlateformTransform.Position.x -= speed * dt;
                 if (targetCharacterTransform.Position.x <= targetPlateformTransform.Position.x + val && targetCharacterTransform.Position.z <= targetPlateformTransform.Position.z + val &&
-                    targetCharacterTransform.Position.x >= targetPlateformTransform.Position.x - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1) {
+                    targetCharacterTransform.Position.x >= targetPlateformTransform.Position.x - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1 && targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - 0.1) {
                     targetCharacterTransform.Position.x -= speed * dt;
                 }
             }
             if (!invertPlateformDir) {
                 targetPlateformTransform.Position.x += speed * dt;
                 if (targetCharacterTransform.Position.x <= targetPlateformTransform.Position.x + val && targetCharacterTransform.Position.z <= targetPlateformTransform.Position.z + val &&
-                    targetCharacterTransform.Position.x >= targetPlateformTransform.Position.x - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1) {
+                    targetCharacterTransform.Position.x >= targetPlateformTransform.Position.x - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1 && targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - 0.1) {
                     targetCharacterTransform.Position.x += speed * dt;
                 }
             }
 
             targetPlateformTransform.Position.y = posY;
             targetPlateformTransform.Position.z = posZ;
-            std::cout << "x\n";
         }
         break;
-        case 'y':
+        case 'y': // il faudrait unfreeze la position dans les contraintes
         {
             if (targetPlateformTransform.Position.y <= -distancePatrol) {
                 targetPlateformTransform.Position.y = -securityDistance;
@@ -75,26 +74,50 @@ public:
             if (invertPlateformDir) {
                 targetPlateformTransform.Position.y -= speed * dt;
                 if (targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + val && targetCharacterTransform.Position.z <= targetPlateformTransform.Position.z + val &&
-                    targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1) {
+                    targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1 && targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - 0.1) {
                     targetCharacterTransform.Position.y -= speed * dt;
                 }
             }
             if (!invertPlateformDir) {
                 targetPlateformTransform.Position.y += speed * dt;
                 if (targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + val && targetCharacterTransform.Position.z <= targetPlateformTransform.Position.z + val &&
-                    targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1) {
+                    targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - val && targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1 && targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - 0.1) {
                     targetCharacterTransform.Position.y += speed * dt;
                 }
             }
 
-            targetPlateformTransform.Position.y = posY;
+            targetPlateformTransform.Position.x = posX;
             targetPlateformTransform.Position.z = posZ;
-            std::cout << "y\n";
         }
         break;
         case 'z':
         {
+            if (targetPlateformTransform.Position.z <= -distancePatrol) {
+                targetPlateformTransform.Position.z = -securityDistance;
+                invertPlateformDir = false;
+            }
+            if (targetPlateformTransform.Position.z >= distancePatrol) {
+                targetPlateformTransform.Position.z = securityDistance;
+                invertPlateformDir = true;
+            }
 
+            if (invertPlateformDir) {
+                targetPlateformTransform.Position.z -= speed * dt;
+                if (targetCharacterTransform.Position.z <= targetPlateformTransform.Position.z + val && targetCharacterTransform.Position.x <= targetPlateformTransform.Position.x + val &&
+                    targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.x >= targetPlateformTransform.Position.x - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1 && targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - 0.1) {
+                    targetCharacterTransform.Position.z -= speed * dt;
+                }
+            }
+            if (!invertPlateformDir) {
+                targetPlateformTransform.Position.z += speed * dt;
+                if (targetCharacterTransform.Position.z <= targetPlateformTransform.Position.z + val && targetCharacterTransform.Position.x <= targetPlateformTransform.Position.x + val &&
+                    targetCharacterTransform.Position.z >= targetPlateformTransform.Position.z - val && targetCharacterTransform.Position.x >= targetPlateformTransform.Position.x - val && targetCharacterTransform.Position.y <= targetPlateformTransform.Position.y + 0.1 && targetCharacterTransform.Position.y >= targetPlateformTransform.Position.y - 0.1) {
+                    targetCharacterTransform.Position.z += speed * dt;
+                }
+            }
+
+            targetPlateformTransform.Position.x = posX;
+            targetPlateformTransform.Position.y = posY;
         }
         break;
         default:
@@ -118,20 +141,12 @@ public:
     }
 
     void OnUpdate(float dt) override {
-        if (InputSysteminstance->GetMouseButtonPressed(1)) {
-            std::vector<Engine::ECS::Entity> allEntities = registry->View<Engine::Components::Transform>();
-            TerminalInstance->info("Entities in the scene:");
-            for (Engine::ECS::Entity entity : allEntities) {
-                TerminalInstance->info("    " + registry->GetEntityName(entity));
-            }
-        }
-
         if (targetPlateform == Engine::ECS::NULL_ENTITY) {
             FindTarget();
             if (targetPlateform == Engine::ECS::NULL_ENTITY) return;
         }
 
-        PlatformPattern('x', targetPlateform, targetCharacter);
+        PlatformPattern('z', targetPlateform, targetCharacter, dt);
     }
 };
 
