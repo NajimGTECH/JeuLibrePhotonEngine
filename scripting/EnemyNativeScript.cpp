@@ -33,13 +33,13 @@ public:
     }
 
     void OnUpdate(float dt) override {
-        if (InputSysteminstance->GetMouseButtonPressed(1)) {
+        /*if (InputSysteminstance->GetMouseButtonPressed(1)) {
             std::vector<Engine::ECS::Entity> allEntities = registry->View<Engine::Components::Transform>();
             TerminalInstance->info("Entities in the scene:");
             for (Engine::ECS::Entity entity : allEntities) {
                 TerminalInstance->info("    " + registry->GetEntityName(entity));
             }
-        }
+        }*/
 
         if (targetEnemy == Engine::ECS::NULL_ENTITY) {
             FindTarget();

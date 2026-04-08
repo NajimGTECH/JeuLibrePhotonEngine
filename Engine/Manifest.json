@@ -3,11 +3,15 @@
     "EncryptionKey": "PhotonEngineReleaseKey_2026",
     "CustomSystemsManifest": "Engine/CustomSystems.json",
     "EngineSettings": "Engine/EngineSettings.json",
+    "Components": {
+        "HealthComponent": true
+    },
     "Assets": {
         "Scripts/FreeCamera.dll": "Scripts/FreeCamera.dll",
         "Scripts/ThirdPersonCamera.dll": "Scripts/ThirdPersonCamera.dll",
         "Scripts/HUDScript.dll": "Scripts/HUDScript.dll",
         "Scripts/GameMaster.dll": "Scripts/GameMaster.dll",
+        "Scripts/BeltGeometryGenerator.dll": "Scripts/BeltGeometryGenerator.dll",
         "Assets/Scenes/DefaultScene.pscene": "Assets/Scenes/DefaultScene.pscene",
         "Assets/Scenes/Test.pscene": "Assets/Scenes/Test.pscene",
         "Assets/Default/Plane_mesh.pa": "Assets/Default/Plane_mesh.pa",

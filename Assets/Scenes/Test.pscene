@@ -1,7 +1,7 @@
 {
     "Entities": [
         {
-            "EntityID": 1844,
+            "EntityID": 16,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -53,7 +53,7 @@
             }
         },
         {
-            "EntityID": 1845,
+            "EntityID": 17,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -61,7 +61,9 @@
             "Name": "Trampoline",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trampoline.dll"
+                "Path": "Scripts/Trampoline.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "RigidBody": {
                 "BoxSize": [
@@ -109,7 +111,7 @@
             }
         },
         {
-            "EntityID": 1846,
+            "EntityID": 18,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -117,7 +119,9 @@
             "Name": "Plateforme",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/PlateformNativeScript.dll"
+                "Path": "Scripts/PlateformNativeScript.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "RigidBody": {
                 "BoxSize": [
@@ -182,7 +186,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 1847,
+            "EntityID": 19,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -193,7 +197,9 @@
             "Name": "Enemy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/EnemyNativeScript.dll"
+                "Path": "Scripts/EnemyNativeScript.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "RigidBody": {
                 "BoxSize": [
@@ -246,11 +252,13 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 1848,
+            "EntityID": 20,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/CameraNativeScript.dll"
+                "Path": "Scripts/CameraNativeScript.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -271,7 +279,7 @@
             }
         },
         {
-            "EntityID": 1849,
+            "EntityID": 21,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -335,7 +343,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 1850,
+            "EntityID": 22,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -390,7 +398,7 @@
             }
         },
         {
-            "EntityID": 1851,
+            "EntityID": 23,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -411,7 +419,7 @@
             }
         },
         {
-            "EntityID": 1852,
+            "EntityID": 24,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -463,7 +471,7 @@
             }
         },
         {
-            "EntityID": 1853,
+            "EntityID": 25,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -504,7 +512,7 @@
             }
         },
         {
-            "EntityID": 1854,
+            "EntityID": 26,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -545,7 +553,7 @@
             }
         },
         {
-            "EntityID": 1855,
+            "EntityID": 27,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -586,7 +594,7 @@
             }
         },
         {
-            "EntityID": 1856,
+            "EntityID": 28,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -638,7 +646,7 @@
             }
         },
         {
-            "EntityID": 1857,
+            "EntityID": 29,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -690,7 +698,7 @@
             }
         },
         {
-            "EntityID": 1858,
+            "EntityID": 30,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -742,7 +750,7 @@
             }
         },
         {
-            "EntityID": 1859,
+            "EntityID": 31,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -794,7 +802,7 @@
             }
         },
         {
-            "EntityID": 1860,
+            "EntityID": 32,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -846,7 +854,7 @@
             }
         },
         {
-            "EntityID": 1861,
+            "EntityID": 33,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -898,7 +906,7 @@
             }
         },
         {
-            "EntityID": 1862,
+            "EntityID": 34,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -950,7 +958,7 @@
             }
         },
         {
-            "EntityID": 1863,
+            "EntityID": 35,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1002,7 +1010,7 @@
             }
         },
         {
-            "EntityID": 1864,
+            "EntityID": 36,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1054,7 +1062,7 @@
             }
         },
         {
-            "EntityID": 1865,
+            "EntityID": 37,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1106,7 +1114,7 @@
             }
         },
         {
-            "EntityID": 1867,
+            "EntityID": 38,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1158,7 +1166,7 @@
             }
         },
         {
-            "EntityID": 1868,
+            "EntityID": 39,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
