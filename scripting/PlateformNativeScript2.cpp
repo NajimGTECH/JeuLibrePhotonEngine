@@ -7,17 +7,17 @@
 #define SCRIPT_API __attribute__((visibility("default")))
 #endif
 
-class PlateformNativeScript : public Engine::Scripting::NativeScript {
+class PlateformNativeScript2 : public Engine::Scripting::NativeScript {
 public:
 
     bool invertPlateformDir = false;
     float speed = 0.3f;
     float val = 0.1f;
-    float distancePatrol = 1.f;
-    float securityDistance = 0.99f;
-    float posY = 0.65f; // position de base en y
-    float posZ = -0.6f; // position de base en z
-    float posX = -0.325f; // position de base en x
+    float distancePatrol = 1.325f;
+    float securityDistance = 1.324f;
+    float posY = -0.45f; // position de base en y
+    float posZ = 0.f; // position de base en z
+    float posX = 1.325f; // position de base en x
 
     Engine::ECS::Entity targetPlateform = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCharacter = Engine::ECS::NULL_ENTITY;
@@ -131,7 +131,7 @@ public:
 
     void FindTarget() {
         for (auto e : registry->View<Engine::Components::Transform>()) {
-            if (registry->GetEntityName(e) == "Plateforme") {
+            if (registry->GetEntityName(e) == "Plateforme_2") {
                 targetPlateform = e;
             }
             else if (registry->GetEntityName(e) == "Character") {
@@ -146,10 +146,10 @@ public:
             if (targetPlateform == Engine::ECS::NULL_ENTITY) return;
         }
 
-        PlatformPattern('z', targetPlateform, targetCharacter, dt);
+        PlatformPattern('x', targetPlateform, targetCharacter, dt);
     }
 };
 
 extern "C" SCRIPT_API Engine::Scripting::NativeScript* CreateScript() {
-    return new PlateformNativeScript();
+    return new PlateformNativeScript2();
 }
