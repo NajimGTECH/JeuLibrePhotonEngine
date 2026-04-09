@@ -10,5 +10,5 @@
     },
     "ScreenHeight": 720,
     "ScreenWidth": 1280,
-    "VSync": true
+    "VSync": false
 }
