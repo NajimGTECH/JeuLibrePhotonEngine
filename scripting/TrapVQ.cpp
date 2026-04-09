@@ -33,7 +33,9 @@ public:
         for (auto e : registry->View<Engine::Components::Transform>()) {
             if (registry->GetEntityName(e) == "Character") {
                 character = e;
-                break;
+            }
+            else if (registry->GetEntityName(e) == "SpawnPoint") {
+                spawn = e;
             }
         }
 
@@ -66,6 +68,7 @@ public:
             return;
 
         auto& trapTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
+        auto& spawnTransform = registry->GetComponent<Engine::Components::Transform>(spawn);
         auto& characterTransform = registry->GetComponent<Engine::Components::Transform>(character);
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
@@ -77,6 +80,7 @@ public:
             characterTransform.Position.y <= trapTransform.Position.y + hitRange && characterTransform.Position.y >= trapTransform.Position.y - hitRange) {
             //TerminalInstance->info("Trap detects player!");
             //m_funcSys->Call("Activate", { character });
+            characterTransform.Position = spawnTransform.Position;
             std::cout << "mort\n";
         }
     }
@@ -88,6 +92,7 @@ public:
     float val = 0.2f;
     float hitRange = 0.1f;
     Engine::ECS::Entity character = Engine::ECS::NULL_ENTITY;
+    Engine::ECS::Entity spawn = Engine::ECS::NULL_ENTITY;
 
 private:
     //==================== Private: functions ====================

@@ -30,10 +30,11 @@ public:
         int index = 0;
 
         // Trouver les cheese par leur nom
-        for (auto e : registry->View<Engine::Components::Transform>()) {
+        for (auto& e : registry->View<Engine::Components::Transform>()) {
             std::string name = registry->GetEntityName(e);
 
             if (name.rfind("Cheese", 0) == 0 && index < 5) {
+                //std::cout << "CHEEZE FOUND: " << name << '\n';
                 cheeseItems[index] = e;
                 index++;
             }
@@ -56,19 +57,17 @@ public:
         if (doorEntity == Engine::ECS::NULL_ENTITY)
             return;
 
-        bool allCollected = true;
-
-        for (int i = 0; i < 5; i++) {
-            if (cheeseItems[i] != Engine::ECS::NULL_ENTITY &&
-                registry->HasComponent<Engine::Components::Transform>(cheeseItems[i])) {
-
-                allCollected = false;
-                break;
+        int numberOfCollectedCheese = 0;
+        for (auto& item : cheeseItems)
+        {
+            if (item == Engine::ECS::NULL_ENTITY)
+            {
+                numberOfCollectedCheese++;
             }
         }
 
-        if (allCollected) {
-            TerminalInstance->info("All cheese collected! Opening door...");
+        if (numberOfCollectedCheese == 5) {
+            std::cout << "All cheese collected! Opening door...\n";
             registry->DestroyEntity(doorEntity);
             doorEntity = Engine::ECS::NULL_ENTITY;
         }
