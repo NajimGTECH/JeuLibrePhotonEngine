@@ -1,7 +1,7 @@
 {
     "Entities": [
         {
-            "EntityID": 3543,
+            "EntityID": 4018,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -53,7 +53,7 @@
             }
         },
         {
-            "EntityID": 3544,
+            "EntityID": 4019,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -111,7 +111,7 @@
             }
         },
         {
-            "EntityID": 3545,
+            "EntityID": 4020,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -170,17 +170,10 @@
         },
         {
             "Animator": {
-                "Animations": [
-                    {
-                        "IsLooping": true,
-                        "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 1.0
-                    }
-                ],
+                "Animations": [],
                 "SkeletonPath": "Assets\\Animations\\Walk Enemy\\Walking_skeleton.pa"
             },
-            "EntityID": 3546,
+            "EntityID": 4021,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -246,7 +239,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 3547,
+            "EntityID": 4022,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -273,7 +266,7 @@
             }
         },
         {
-            "EntityID": 3548,
+            "EntityID": 4023,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -320,24 +313,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.04171353951096535
+                        "Weight": 0.988664448261261
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.028155235573649406
+                        "Weight": 0.0003330481122247875
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.9301312565803528
+                        "Weight": 0.01100252103060484
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 3549,
+            "EntityID": 4024,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -398,7 +391,7 @@
             }
         },
         {
-            "EntityID": 3550,
+            "EntityID": 4025,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -419,7 +412,7 @@
             }
         },
         {
-            "EntityID": 3551,
+            "EntityID": 4026,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -471,7 +464,7 @@
             }
         },
         {
-            "EntityID": 3552,
+            "EntityID": 4027,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -512,7 +505,7 @@
             }
         },
         {
-            "EntityID": 3553,
+            "EntityID": 4028,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -553,7 +546,7 @@
             }
         },
         {
-            "EntityID": 3554,
+            "EntityID": 4029,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -594,7 +587,7 @@
             }
         },
         {
-            "EntityID": 3555,
+            "EntityID": 4030,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -646,7 +639,7 @@
             }
         },
         {
-            "EntityID": 3556,
+            "EntityID": 4031,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -698,7 +691,7 @@
             }
         },
         {
-            "EntityID": 3557,
+            "EntityID": 4032,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -750,7 +743,7 @@
             }
         },
         {
-            "EntityID": 3558,
+            "EntityID": 4033,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -802,7 +795,7 @@
             }
         },
         {
-            "EntityID": 3559,
+            "EntityID": 4034,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -854,7 +847,7 @@
             }
         },
         {
-            "EntityID": 3560,
+            "EntityID": 4035,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -906,7 +899,7 @@
             }
         },
         {
-            "EntityID": 3561,
+            "EntityID": 4036,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -958,7 +951,7 @@
             }
         },
         {
-            "EntityID": 3562,
+            "EntityID": 4037,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1010,7 +1003,7 @@
             }
         },
         {
-            "EntityID": 3563,
+            "EntityID": 4038,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1062,7 +1055,7 @@
             }
         },
         {
-            "EntityID": 3564,
+            "EntityID": 4039,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1114,7 +1107,7 @@
             }
         },
         {
-            "EntityID": 3565,
+            "EntityID": 4040,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1166,7 +1159,7 @@
             }
         },
         {
-            "EntityID": 3566,
+            "EntityID": 4041,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1218,7 +1211,7 @@
             }
         },
         {
-            "EntityID": 3567,
+            "EntityID": 4042,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1270,7 +1263,7 @@
             }
         },
         {
-            "EntityID": 3568,
+            "EntityID": 4043,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1322,7 +1315,7 @@
             }
         },
         {
-            "EntityID": 3569,
+            "EntityID": 4044,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1374,7 +1367,7 @@
             }
         },
         {
-            "EntityID": 3570,
+            "EntityID": 4045,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1426,7 +1419,7 @@
             }
         },
         {
-            "EntityID": 3571,
+            "EntityID": 4046,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1478,7 +1471,7 @@
             }
         },
         {
-            "EntityID": 3572,
+            "EntityID": 4047,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1519,7 +1512,7 @@
             }
         },
         {
-            "EntityID": 3573,
+            "EntityID": 4048,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1560,7 +1553,7 @@
             }
         },
         {
-            "EntityID": 3574,
+            "EntityID": 4049,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1601,7 +1594,7 @@
             }
         },
         {
-            "EntityID": 3575,
+            "EntityID": 4050,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1653,7 +1646,7 @@
             }
         },
         {
-            "EntityID": 3576,
+            "EntityID": 4051,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1705,7 +1698,7 @@
             }
         },
         {
-            "EntityID": 3577,
+            "EntityID": 4052,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1746,7 +1739,7 @@
             }
         },
         {
-            "EntityID": 3578,
+            "EntityID": 4053,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1798,7 +1791,7 @@
             }
         },
         {
-            "EntityID": 3579,
+            "EntityID": 4054,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -1856,7 +1849,7 @@
             }
         },
         {
-            "EntityID": 3580,
+            "EntityID": 4055,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1897,7 +1890,7 @@
             },
             "Transform": {
                 "Position": [
-                    0.7000000476837158,
+                    0.7699999809265137,
                     -0.019999999552965164,
                     -7.450580596923828e-09
                 ],
@@ -1914,7 +1907,7 @@
             }
         },
         {
-            "EntityID": 3581,
+            "EntityID": 4056,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1972,7 +1965,7 @@
             }
         },
         {
-            "EntityID": 3582,
+            "EntityID": 4057,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2030,7 +2023,7 @@
             }
         },
         {
-            "EntityID": 3583,
+            "EntityID": 4058,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2088,7 +2081,7 @@
             }
         },
         {
-            "EntityID": 3584,
+            "EntityID": 4059,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2146,7 +2139,7 @@
             }
         },
         {
-            "EntityID": 3585,
+            "EntityID": 4060,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2204,7 +2197,7 @@
             }
         },
         {
-            "EntityID": 3586,
+            "EntityID": 4061,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -2256,13 +2249,13 @@
             }
         },
         {
-            "EntityID": 3587,
+            "EntityID": 4097,
             "Light": {
                 "CastShadows": true,
                 "Color": [
-                    1.0,
-                    1.0,
-                    1.0
+                    0.8999999761581421,
+                    5.0,
+                    1.2000000476837158
                 ],
                 "Direction": [
                     0.0,
@@ -2277,12 +2270,12 @@
                 "SpotAngle": 45.0,
                 "Type": 1
             },
-            "Name": "Light Tampoline",
+            "Name": "Light Tampoline_10",
             "Transform": {
                 "Position": [
-                    -0.5999999046325684,
-                    -0.6999997496604919,
-                    -1.2000001668930054
+                    0.3999999761581421,
+                    -0.4959999918937683,
+                    0.20000053942203522
                 ],
                 "Rotation": [
                     0.0,
@@ -2297,7 +2290,7 @@
             }
         },
         {
-            "EntityID": 3588,
+            "EntityID": 4063,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2338,7 +2331,7 @@
             }
         },
         {
-            "EntityID": 3589,
+            "EntityID": 4064,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2362,7 +2355,7 @@
             "Name": "Light Tampoline_3",
             "Transform": {
                 "Position": [
-                    -0.5999999046325684,
+                    -0.6000000238418579,
                     0.10000023990869522,
                     0.09999984502792358
                 ],
@@ -2379,7 +2372,7 @@
             }
         },
         {
-            "EntityID": 3590,
+            "EntityID": 4065,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2403,7 +2396,7 @@
             "Name": "Light Tampoline_4",
             "Transform": {
                 "Position": [
-                    0.7000001668930054,
+                    0.7699999809265137,
                     0.10000023990869522,
                     -1.564621925354004e-07
                 ],
@@ -2420,7 +2413,7 @@
             }
         },
         {
-            "EntityID": 3591,
+            "EntityID": 4066,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2461,7 +2454,7 @@
             }
         },
         {
-            "EntityID": 3592,
+            "EntityID": 4067,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2502,7 +2495,7 @@
             }
         },
         {
-            "EntityID": 3593,
+            "EntityID": 4068,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2543,7 +2536,7 @@
             }
         },
         {
-            "EntityID": 3594,
+            "EntityID": 4069,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2584,7 +2577,7 @@
             }
         },
         {
-            "EntityID": 3595,
+            "EntityID": 4070,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -2615,7 +2608,7 @@
             }
         },
         {
-            "EntityID": 3596,
+            "EntityID": 4071,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -2646,7 +2639,7 @@
             }
         },
         {
-            "EntityID": 3597,
+            "EntityID": 4072,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -2688,7 +2681,7 @@
                 ],
                 "SkeletonPath": "Assets\\Animations\\Walk Enemy\\Walking_skeleton.pa"
             },
-            "EntityID": 3598,
+            "EntityID": 4073,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2749,7 +2742,7 @@
             }
         },
         {
-            "EntityID": 3599,
+            "EntityID": 4074,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -2780,7 +2773,7 @@
             }
         },
         {
-            "EntityID": 3600,
+            "EntityID": 4075,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -2811,7 +2804,7 @@
             }
         },
         {
-            "EntityID": 3601,
+            "EntityID": 4076,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -2859,7 +2852,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 3602,
+            "EntityID": 4077,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2937,7 +2930,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 3603,
+            "EntityID": 4078,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2998,7 +2991,7 @@
             }
         },
         {
-            "EntityID": 3604,
+            "EntityID": 4079,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3029,7 +3022,7 @@
             }
         },
         {
-            "EntityID": 3605,
+            "EntityID": 4080,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3060,7 +3053,7 @@
             }
         },
         {
-            "EntityID": 3606,
+            "EntityID": 4081,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3091,7 +3084,7 @@
             }
         },
         {
-            "EntityID": 3607,
+            "EntityID": 4082,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3122,7 +3115,7 @@
             }
         },
         {
-            "EntityID": 3608,
+            "EntityID": 4083,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3153,7 +3146,7 @@
             }
         },
         {
-            "EntityID": 3609,
+            "EntityID": 4084,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3184,7 +3177,7 @@
             }
         },
         {
-            "EntityID": 3610,
+            "EntityID": 4085,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3215,7 +3208,7 @@
             }
         },
         {
-            "EntityID": 3611,
+            "EntityID": 4086,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3246,7 +3239,7 @@
             }
         },
         {
-            "EntityID": 3612,
+            "EntityID": 4087,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3277,7 +3270,7 @@
             }
         },
         {
-            "EntityID": 3613,
+            "EntityID": 4088,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\OPM0041_mesh.pa"
@@ -3308,7 +3301,7 @@
             }
         },
         {
-            "EntityID": 3614,
+            "EntityID": 4089,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -3342,7 +3335,7 @@
             }
         },
         {
-            "EntityID": 3615,
+            "EntityID": 4090,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -3376,7 +3369,7 @@
             }
         },
         {
-            "EntityID": 3616,
+            "EntityID": 4091,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -3410,7 +3403,7 @@
             }
         },
         {
-            "EntityID": 3617,
+            "EntityID": 4092,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -3444,13 +3437,368 @@
             }
         },
         {
-            "EntityID": 3618,
+            "EntityID": 4093,
             "Name": "SpawnPoint",
             "Transform": {
                 "Position": [
                     -0.30000001192092896,
                     0.0,
                     -0.30000001192092896
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 4094,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline9",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline3.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    1.6000001430511475,
+                    -0.7200000286102295,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 4095,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    2.0,
+                    0.20000000298023224,
+                    0.05000000074505806
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Trampoline_9",
+            "Transform": {
+                "Position": [
+                    1.600000023841858,
+                    -0.7200000286102295,
+                    5.364418029785156e-07
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 4096,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline10",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline3.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.40000009536743164,
+                    -0.5180000066757202,
+                    0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 4098,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_2_Copy",
+            "Transform": {
+                "Position": [
+                    -0.5999999046325684,
+                    -0.6999997496604919,
+                    -1.2000001668930054
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 4099,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Default\\Coin_mat_CoinMat.pa"
+                ],
+                "Path": "Assets\\Default\\CoinDae_mesh.pa"
+            },
+            "Name": "Cheese_2_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.09999998658895493,
+                    -0.44999998807907104,
+                    5.364418029785156e-07
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 4100,
+            "Name": "Door",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 4101,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Default\\Door_mat_M_Door.pa"
+                ],
+                "Path": "Assets\\Default\\Door_mesh.pa"
+            },
+            "Name": "Door_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Door.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    -0.3400000035762787
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
+                ]
+            }
+        },
+        {
+            "EntityID": 4102,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    0.20000000298023224,
+                    8.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.02500000037252903,
+                "OrthoSize": 15.0,
+                "Range": 0.30000001192092896,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Door",
+            "Transform": {
+                "Position": [
+                    0.10499999672174454,
+                    0.20000028610229492,
+                    -0.20000013709068298
                 ],
                 "Rotation": [
                     0.0,
