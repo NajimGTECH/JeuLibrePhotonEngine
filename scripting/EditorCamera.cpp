@@ -45,10 +45,10 @@ public:
             
             // --- NEW: 1-Frame Debounce ---
             // Wait 1 frame to ensure ImGui has updated its hover state for this frame.
-            if (!wasRightClickPressed) {
+            /*if (!wasRightClickPressed) {
                 wasRightClickPressed = true;
                 return; 
-            }
+            }*/
 
             if (!isMouseCaptured && !Engine::Core::UIState::IsMouseCaptured()) {
                 InputSysteminstance->SetMouseCapture(true);
