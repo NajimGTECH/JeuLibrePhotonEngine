@@ -13,7 +13,7 @@ public:
     Engine::ECS::Entity targetTrampoline = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCharacter = Engine::ECS::NULL_ENTITY;
 
-    float val = 0.1f;
+    float val = 0.15f;
     float forceJump = 3.5f;
     float heightJump = 0.5f;
 
@@ -45,7 +45,8 @@ public:
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
 
         if (targetCharacterTransform.Position.x <= targetTrampolineTransform.Position.x + val && targetCharacterTransform.Position.z <= targetTrampolineTransform.Position.z + val &&
-            targetCharacterTransform.Position.x >= targetTrampolineTransform.Position.x - val && targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.z - val && targetCharacterTransform.Position.y <= targetTrampolineTransform.Position.y + heightJump) {
+            targetCharacterTransform.Position.x >= targetTrampolineTransform.Position.x - val && targetCharacterTransform.Position.z >= targetTrampolineTransform.Position.z - val && 
+            targetCharacterTransform.Position.y <= targetTrampolineTransform.Position.y + heightJump && targetCharacterTransform.Position.y >= targetTrampolineTransform.Position.y - 0.2) {
             physicsSystem->AddImpulse(targetCharacter, targetCharacterTransform.Up * forceJump * dt);
         }
     }

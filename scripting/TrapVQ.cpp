@@ -77,6 +77,7 @@ public:
             characterTransform.Position.y <= trapTransform.Position.y + hitRange && characterTransform.Position.y >= trapTransform.Position.y - hitRange) {
             //TerminalInstance->info("Trap detects player!");
             //m_funcSys->Call("Activate", { character });
+            std::cout << "mort\n";
         }
     }
 
