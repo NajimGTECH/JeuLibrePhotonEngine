@@ -12,7 +12,7 @@
 class GameMaster : public Engine::Scripting::NativeScript {
 private:
     Engine::Systems::AudioRegistry* m_AudioReg = nullptr; 
-    Engine::Systems::FunctionRegistrySystem* m_GlobalReg = nullptr; 
+    Engine::Systems::FunctionRegistrySystem* m_GlobalReg = nullptr;
 public:
     void InitGameMasterAudioControl() {
         m_GlobalReg = engine->GetSystem<Engine::Systems::FunctionRegistrySystem>();
@@ -91,6 +91,8 @@ public:
                 this->DrawHUD();
             });
         }
+
+
     }
 
     void OnUpdate(float dt) override {

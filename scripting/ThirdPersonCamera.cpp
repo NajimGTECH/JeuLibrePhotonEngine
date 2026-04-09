@@ -2,9 +2,9 @@
 #include "Systems/AnimatorSystem.h"
 
 #ifdef _WIN32
-    #define SCRIPT_API __declspec(dllexport)
+#define SCRIPT_API __declspec(dllexport)
 #else
-    #define SCRIPT_API __attribute__((visibility("default")))
+#define SCRIPT_API __attribute__((visibility("default")))
 #endif
 
 class ThirdPersonCamera : public Engine::Scripting::NativeScript {
@@ -20,10 +20,10 @@ public:
     const float MAX_PITCH_LIMIT = 0.f;
     const float MIN_PITCH_LIMIT = -60.f;
     float targetHeightOffset = 0.1f;
-    
+
     bool invertX = false;
     bool invertY = false;
-    
+
     Engine::ECS::Entity targetEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
 
@@ -36,7 +36,7 @@ public:
     std::string backwardAnim = "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa";
 
     // 1.0 = full forward, 0.0 = idle, -1.0 = full backward
-    float currentMoveState = 0.0f; 
+    float currentMoveState = 0.0f;
 
     void OnInit() override {
         Inspect("Distance", &distance);
@@ -64,8 +64,8 @@ public:
                 return sum;
             }
             std::cerr << "[AddAndPrint] Invalid arguments provided!" << std::endl;
-            return {}; 
-        });
+            return {};
+            });
 
         std::cout << "Calling 'AddAndPrint' from OnCreate..." << std::endl;
         std::vector<std::any> testArgs = { 10.5f, 20.0f };
@@ -78,7 +78,7 @@ public:
 
         funcSys->Register("OnStep", [this](std::vector<std::any> args) -> std::any {
             return this->HandleFootstep(args);
-        });
+            });
     }
 
     std::any HandleFootstep(const std::vector<std::any>& args) {
@@ -103,20 +103,21 @@ public:
             if (m_Registry->HasComponent<Engine::Components::AudioSource>(entity)) {
                 auto& audio = m_Registry->GetComponent<Engine::Components::AudioSource>(entity);
                 // Assuming you have a way to pick a random footstep sound or just play the default
-                audio.Play(); 
+                audio.Play();
             }
             */
 
             auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
             Engine::Systems::PhysicsUtils::RaycastHit hitResult = physicsSystem->Raycast(
-                targetTransform.Position, 
-                targetTransform.Position - glm::vec3(0.0, 0.05, 0.0), 
-                targetEntity, 
+                targetTransform.Position,
+                targetTransform.Position - glm::vec3(0.0, 0.05, 0.0),
+                targetEntity,
                 { true, 3.0f, {1, 0, 0}, {1, 1, 0}, {0, 1, 1}, {0.5, 0.5, 0.5}, 0.05f, 0.012f }
             );
 
-        } catch (const std::bad_any_cast& e) {
+        }
+        catch (const std::bad_any_cast& e) {
             TerminalInstance->error("OnFootstep: Invalid argument type passed!");
         }
 
@@ -135,7 +136,7 @@ public:
     }
 
     bool InitAnimations() {
-        auto animSys = engine->GetSystem<Engine::Systems::AnimatorSystem>(); 
+        auto animSys = engine->GetSystem<Engine::Systems::AnimatorSystem>();
         if (animSys && registry->HasComponent<Engine::Components::Animator>(targetEntity)) {
             if (!animSys->IsAnimationValid(targetEntity, idleAnim)) return false;
             if (!animSys->IsAnimationValid(targetEntity, forwardAnim)) return false;
@@ -155,19 +156,19 @@ public:
         if (InputSysteminstance->GetMouseButtonPressed(1)) {
             isMouseCaptured = !isMouseCaptured;
             InputSysteminstance->SetMouseCapture(isMouseCaptured);
-
+            /*
             std::vector<Engine::ECS::Entity> allEntities = registry->View<Engine::Components::Transform>();
             TerminalInstance->info("Entities in the scene:");
             for (Engine::ECS::Entity entity : allEntities) {
                 TerminalInstance->info("    " + registry->GetEntityName(entity));
-            }
+            }*/
         }
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
 
         if (targetEntity == Engine::ECS::NULL_ENTITY) {
             FindTarget();
-            if (targetEntity == Engine::ECS::NULL_ENTITY) return; 
+            if (targetEntity == Engine::ECS::NULL_ENTITY) return;
         }
 
         if (!animationsInitialized) {
@@ -177,25 +178,25 @@ public:
         }
 
         // JUMP LOGIC
-        if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem) {
+        /*if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem) {
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
-            
+
             // Ignore the targetEntity (character) so the raycast doesn't hit its own capsule
             Engine::Systems::PhysicsUtils::RaycastHit hitResult = physicsSystem->Raycast(
-                targetTransform.Position, 
-                targetTransform.Position - glm::vec3(0.0, 0.1, 0.0), 
-                targetEntity, 
+                targetTransform.Position,
+                targetTransform.Position - glm::vec3(0.0, 0.1, 0.0),
+                targetEntity,
                 { true, 0.1f, {1, 0, 0}, {1, 1, 0}, {0, 1, 1}, {0.5, 0.5, 0.5}, 0.05f, 0.012f }
             );
-            
+
             std::string HitEntityName = registry->GetEntityName(hitResult.hitEntity);
             TerminalInstance->print("RayCast Hit " + HitEntityName);
-            
+
             if (HitEntityName == "Floor") {
                 // Apply an upward impulse to the character body
                 physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 1.01f);
             }
-        }
+        }*/
 
         if (!isMouseCaptured && Engine::Core::UIState::IsMouseCaptured()) {
             return;
@@ -212,7 +213,6 @@ public:
                 yaw += 1.f * cameraSpeed * dt;
             }
             if (InputSysteminstance->GetKeyState(GLFW_KEY_UP)) {
-
                 if (pitch <= MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
 
                 pitch -= 1.f * cameraSpeed * dt;
@@ -234,7 +234,7 @@ public:
         
         if (registry->HasComponent<Engine::Components::Transform>(entityID) && 
             registry->HasComponent<Engine::Components::Transform>(targetCameraEntity)) {
-            
+
             auto& cameraTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
             auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
@@ -245,14 +245,14 @@ public:
             cameraTransform.Rotation.z = 0.0f;
 
             glm::mat4 rotationMatrix = glm::mat4(1.0f);
-            rotationMatrix = glm::rotate(rotationMatrix, glm::radians(cameraTransform.Rotation.y), glm::vec3(0, 1, 0)); 
-            rotationMatrix = glm::rotate(rotationMatrix, glm::radians(cameraTransform.Rotation.x), glm::vec3(1, 0, 0)); 
-            
+            rotationMatrix = glm::rotate(rotationMatrix, glm::radians(cameraTransform.Rotation.y), glm::vec3(0, 1, 0));
+            rotationMatrix = glm::rotate(rotationMatrix, glm::radians(cameraTransform.Rotation.x), glm::vec3(1, 0, 0));
+
             cameraTransform.Forward = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, -1.0f, 0.0f)));
 
             // Character Movement Logic
-            float targetMoveState = 0.0f; 
-            
+            float targetMoveState = 0.0f;
+
             glm::vec3 flatForward = glm::normalize(glm::vec3(cameraTransform.Forward.x, 0.0f, cameraTransform.Forward.z));
             glm::vec3 flatRight = glm::normalize(glm::cross(flatForward, glm::vec3(0.0f, 1.0f, 0.0f)));
 
@@ -262,23 +262,23 @@ public:
                 // Player Movements
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_W)) {
                     inputDirection += flatForward;
-                    targetMoveState = 1.0f; 
+                    targetMoveState = 1.0f;
                     targetCharacterTransform.Rotation.y = yaw + 180.f;
                 }
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_S)) {
                     inputDirection -= flatForward;
-                    targetMoveState = -1.0f; 
+                    targetMoveState = -1.0f;
                     targetCharacterTransform.Rotation.y = yaw;
                 }
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_D)) {
                     inputDirection += flatRight;
-                    targetMoveState = 1.0f; 
+                    targetMoveState = 1.0f;
                     targetCharacterTransform.Rotation.y = yaw + 90.f;
                 }
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_A)) {
                     inputDirection -= flatRight;
-                    targetMoveState = 1.0f; 
-                    targetCharacterTransform.Rotation.y = yaw -90.f;
+                    targetMoveState = 1.0f;
+                    targetCharacterTransform.Rotation.y = yaw - 90.f;
                 }
             }
 
@@ -291,7 +291,7 @@ public:
             if (physicsSystem) {
                 // Fetch the current velocity so we don't overwrite gravity (the Y axis)
                 glm::vec3 currentVel = physicsSystem->GetLinearVelocity(targetEntity);
-                
+
                 // Keep the current falling/jumping velocity, but overwrite X and Z with input
                 glm::vec3 targetVelocity = glm::vec3(inputDirection.x, currentVel.y, inputDirection.z);
                 physicsSystem->SetLinearVelocity(targetEntity, targetVelocity);

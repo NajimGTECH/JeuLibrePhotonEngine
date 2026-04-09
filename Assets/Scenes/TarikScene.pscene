@@ -6,7 +6,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 185,
+            "EntityID": 80,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -31,7 +31,7 @@
             }
         },
         {
-            "EntityID": 186,
+            "EntityID": 81,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -78,24 +78,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\Jog Backward_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\Jog Backward_anim_mixamorig_Hips.pa",
-                        "Weight": 0.22726672887802124
+                        "Weight": 0.072492815554142
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\Jogging_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\Jogging_anim_mixamorig_Hips.pa",
-                        "Weight": 0.7500234246253967
+                        "Weight": 0.920633852481842
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Mixamo\\idle_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Mixamo\\idle_anim_mixamorig_Hips.pa",
-                        "Weight": 0.022709855809807777
+                        "Weight": 0.006873373407870531
                     }
                 ],
                 "SkeletonPath": "Assets\\Mixamo\\idle_skeleton.pa"
             },
-            "EntityID": 187,
+            "EntityID": 82,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -151,7 +151,7 @@
             }
         },
         {
-            "EntityID": 188,
+            "EntityID": 83,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -207,7 +207,7 @@
                 "Animations": [],
                 "SkeletonPath": "Assets\\Default\\CoinDae_skeleton.pa"
             },
-            "EntityID": 189,
+            "EntityID": 84,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -239,7 +239,7 @@
             }
         },
         {
-            "EntityID": 190,
+            "EntityID": 85,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -284,10 +284,13 @@
                 "Animations": [],
                 "SkeletonPath": "Assets\\Default\\Cheese_skeleton.pa"
             },
-            "EntityID": 191,
+            "EntityID": 86,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cheese_mesh.pa"
+                "Materials": [
+                    "Assets\\Default\\Cheese_mat_Material.pa"
+                ],
+                "Path": "Assets\\Default\\CheeseFBX_mesh.pa"
             },
             "Name": "Cheese",
             "NativeScript": {
@@ -306,9 +309,68 @@
                     0.0
                 ],
                 "Scale": [
-                    0.029999999329447746,
-                    0.029999999329447746,
-                    0.029999999329447746
+                    0.0005000000237487257,
+                    0.0005000000237487257,
+                    0.0005000000237487257
+                ]
+            }
+        },
+        {
+            "EntityID": 87,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Default\\Door_mat_M_Door.pa"
+                ],
+                "Path": "Assets\\Default\\Door_mesh.pa"
+            },
+            "Name": "Door",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Door.dll"
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.10000000894069672,
+                    0.0,
+                    -0.30000001192092896
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
                 ]
             }
         }
