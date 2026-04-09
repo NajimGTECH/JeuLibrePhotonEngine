@@ -11,6 +11,7 @@ class ThirdPersonCamera : public Engine::Scripting::NativeScript {
 public:
     float distance = 0.5f;
     float cameraSpeed = 75.0f;
+    float zoomSpeed = 2.5f;
     float moveSpeed = 0.3f; // Note: Increased default as this is now a velocity (m/s), not a frame delta
     float animationBlendSpeed = 10.0f; // How fast animations transition
 
@@ -200,27 +201,35 @@ public:
             return;
         }
 
-        // Camera Key Movements
-        if (InputSysteminstance->GetKeyState(GLFW_KEY_LEFT)) {
-            yaw += -1.f * cameraSpeed * dt;
-        }
+        // Camera Inputs
+        if (isMouseCaptured)
+        {
+            // Camera Key Movements
+            if (InputSysteminstance->GetKeyState(GLFW_KEY_LEFT)) {
+                yaw += -1.f * cameraSpeed * dt;
+            }
+            if (InputSysteminstance->GetKeyState(GLFW_KEY_RIGHT)) {
+                yaw += 1.f * cameraSpeed * dt;
+            }
+            if (InputSysteminstance->GetKeyState(GLFW_KEY_UP)) {
 
-        if (InputSysteminstance->GetKeyState(GLFW_KEY_RIGHT)) {
-            yaw += 1.f * cameraSpeed * dt;
-        }
+                if (pitch <= MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
 
-        if (InputSysteminstance->GetKeyState(GLFW_KEY_UP)) {
+                pitch -= 1.f * cameraSpeed * dt;
+            }
+            if (InputSysteminstance->GetKeyState(GLFW_KEY_DOWN)) {
 
-            if (pitch <= MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
+                if (pitch >= MAX_PITCH_LIMIT) pitch = MAX_PITCH_LIMIT;
 
-            pitch -= 1.f * cameraSpeed * dt;
-        }
-
-        if (InputSysteminstance->GetKeyState(GLFW_KEY_DOWN)) {
-
-            if (pitch >= MAX_PITCH_LIMIT) pitch = MAX_PITCH_LIMIT;
-
-            pitch += 1.f * cameraSpeed * dt;
+                pitch += 1.f * cameraSpeed * dt;
+            }
+            // Camera Zoom
+            if (InputSysteminstance->GetKeyState(GLFW_KEY_Q)) {
+                distance -= 1 * zoomSpeed * dt;
+            }
+            if (InputSysteminstance->GetKeyState(GLFW_KEY_E)) {
+                distance += 1 * zoomSpeed * dt;
+            }
         }
         
         if (registry->HasComponent<Engine::Components::Transform>(entityID) && 
@@ -250,18 +259,17 @@ public:
             glm::vec3 inputDirection(0.0f);
 
             if (isMouseCaptured) {
+                // Player Movements
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_W)) {
                     inputDirection += flatForward;
                     targetMoveState = 1.0f; 
                     targetCharacterTransform.Rotation.y = yaw + 180.f;
                 }
-
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_S)) {
                     inputDirection -= flatForward;
                     targetMoveState = -1.0f; 
                     targetCharacterTransform.Rotation.y = yaw;
                 }
-
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_D)) {
                     inputDirection += flatRight;
                     targetMoveState = 1.0f; 
