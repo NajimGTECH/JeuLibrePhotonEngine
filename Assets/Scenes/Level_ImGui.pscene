@@ -1,0 +1,3317 @@
+{
+    "Entities": [
+        {
+            "EntityID": 443,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Cube-3",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.5999999642372131,
+                    0.550000011920929,
+                    -0.25
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.25,
+                    0.05000000074505806,
+                    0.6000000238418579
+                ]
+            }
+        },
+        {
+            "EntityID": 444,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.019999999552965164,
+                    0.09999999403953552
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 445,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Plane_mesh.pa"
+            },
+            "Name": "Plateforme",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/PlateformNativeScript.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    0.009999999776482582,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 100000000.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    true,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    true,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.2750000059604645,
+                    0.6500000357627869,
+                    -0.6000000238418579
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.09999997913837433,
+                    1.0,
+                    0.09999997913837433
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Weight": 1.0
+                    }
+                ],
+                "SkeletonPath": "Assets\\Animations\\Walk Enemy\\Walking_skeleton.pa"
+            },
+            "EntityID": 446,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Enemy\\Enemy_mat_Ch19_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Enemy\\Enemy_mesh.pa"
+            },
+            "Name": "Enemy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/EnemyNativeScript.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.07500000298023224,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.5199183225631714,
+                    0.005000002682209015,
+                    -0.625153124332428
+                ],
+                "Rotation": [
+                    -5.008951575291576e-06,
+                    -5.008951575291576e-06,
+                    -5.008951575291576e-06
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
+                ]
+            }
+        },
+        {
+            "Camera": {
+                "FarPlane": 1000.0,
+                "Fov": 80.0,
+                "NearPlane": 0.009999999776482582
+            },
+            "EntityID": 447,
+            "Name": "Main Camera",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ThirdPersonCamera.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -1.0007498264312744,
+                    0.3042326271533966,
+                    -0.408397912979126
+                ],
+                "Rotation": [
+                    -10.699965476989746,
+                    -112.1999740600586,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 448,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.0,
+                "OrthoSize": 1.0,
+                "Range": 5.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 0
+            },
+            "Name": "Sun",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
+                        "Weight": 0.06678672879934311
+                    },
+                    {
+                        "IsLooping": false,
+                        "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
+                        "Weight": 0.027418561279773712
+                    },
+                    {
+                        "IsLooping": false,
+                        "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
+                        "Weight": 0.9057947397232056
+                    }
+                ],
+                "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
+            },
+            "EntityID": 449,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Mousey\\Mousey_mat_Ch14_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Mousey\\Mousey_mesh.pa"
+            },
+            "Name": "Character",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/HUDScript.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 0.20100000500679016,
+                "Offset": [
+                    0.0,
+                    0.07500000298023224,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.2824469208717346,
+                    0.005000002682209015,
+                    -0.6879312992095947
+                ],
+                "Rotation": [
+                    0.0,
+                    -44.096004486083984,
+                    0.0
+                ],
+                "Scale": [
+                    0.0010000000474974513,
+                    0.0010000000474974513,
+                    0.0010000000474974513
+                ]
+            }
+        },
+        {
+            "EntityID": 450,
+            "Name": "AnimEditor_Preview",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 451,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-1",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.949999988079071,
+                    0.05000000074505806,
+                    -0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 452,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    2.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Red",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    1.4000000953674316,
+                    -0.8999999761581421
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 453,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    2.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Blue",
+            "Transform": {
+                "Position": [
+                    0.0,
+                    1.5,
+                    1.100000023841858
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 454,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    2.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Green",
+            "Transform": {
+                "Position": [
+                    -0.30000001192092896,
+                    1.2000000476837158,
+                    0.10000000149011612
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 455,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Plane_mesh.pa"
+            },
+            "Name": "Floor",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    0.009999999776482582,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 456,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "House-3",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.10000000149011612,
+                    0.3440000116825104,
+                    -0.6000000238418579
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.25,
+                    0.3499999940395355,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 457,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.949999988079071,
+                    0.05000000074505806,
+                    -2.2351741790771484e-08
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 458,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-3",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.05000000074505806,
+                    -0.949999988079071
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.049999989569187164,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 459,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-4",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.05000000074505806,
+                    0.949999988079071
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.049999989569187164,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 460,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "House-1",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    0.15000000596046448,
+                    0.5
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.15000000596046448,
+                    0.15000000596046448,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 461,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "House-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.20000000298023224,
+                    0.5
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.44999998807907104,
+                    0.20000000298023224,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 462,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Cube-1",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.4000000059604645,
+                    0.44999998807907104,
+                    0.3499999940395355
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 463,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Cube-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.30000001192092896,
+                    0.44999998807907104,
+                    0.30000001192092896
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.05000000074505806,
+                    0.05000000074505806,
+                    0.05000000074505806
+                ]
+            }
+        },
+        {
+            "EntityID": 464,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Slide",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.5700000524520874,
+                    0.29600000381469727,
+                    0.5000000596046448
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    22.89997100830078
+                ],
+                "Scale": [
+                    0.1599999964237213,
+                    0.04999999329447746,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 465,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline2",
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.30000001192092896,
+                    0.3799999952316284,
+                    0.3999999761581421
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 466,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Slide-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.5299999713897705,
+                    0.6000000238418579,
+                    -0.6000000238418579
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    -14.0
+                ],
+                "Scale": [
+                    0.20000000298023224,
+                    0.05000000074505806,
+                    0.25
+                ]
+            }
+        },
+        {
+            "EntityID": 467,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-5",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.550000011920929,
+                    1.5499999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.44999998807907104,
+                    0.05000000074505806,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 468,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-7",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -1.2999999523162842,
+                    0.12999999523162842,
+                    3.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.4500000774860382,
+                    0.05000000074505806,
+                    1.0000001192092896
+                ]
+            }
+        },
+        {
+            "EntityID": 469,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-6",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    1.2000000476837158,
+                    0.6500000357627869,
+                    2.450000286102295
+                ],
+                "Rotation": [
+                    -13.134021759033203,
+                    89.99994659423828,
+                    0.0
+                ],
+                "Scale": [
+                    0.44999998807907104,
+                    0.049999989569187164,
+                    2.299999952316284
+                ]
+            }
+        },
+        {
+            "EntityID": 470,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-Box-2",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -1.2999999523162842,
+                    0.4300000071525574,
+                    5.0
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.5,
+                    0.5,
+                    1.0000001192092896
+                ]
+            }
+        },
+        {
+            "EntityID": 471,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-Box-1",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    3.878000020980835,
+                    0.7699999809265137,
+                    2.450000047683716
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.44999998807907104,
+                    0.44999998807907104,
+                    0.5
+                ]
+            }
+        },
+        {
+            "EntityID": 472,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    2.0,
+                    2.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Cyan",
+            "Transform": {
+                "Position": [
+                    3.8999998569488525,
+                    1.8000000715255737,
+                    2.5
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 473,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    2.0,
+                    0.5,
+                    5.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Purple",
+            "Transform": {
+                "Position": [
+                    -1.2999999523162842,
+                    1.6000001430511475,
+                    5.5
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 474,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    6.0,
+                    4.0,
+                    2.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Orange",
+            "Transform": {
+                "Position": [
+                    -1.0999999046325684,
+                    1.7000001668930054,
+                    2.4000000953674316
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 475,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-8",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.8500000238418579,
+                    -2.2249999046325684
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.824999988079071,
+                    0.05000000074505806,
+                    0.05000000074505806
+                ]
+            }
+        },
+        {
+            "EntityID": 476,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-Box-3",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.8500000238418579,
+                    -3.700000047683716
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.6499999761581421,
+                    0.05000000074505806,
+                    0.6499999761581421
+                ]
+            }
+        },
+        {
+            "EntityID": 477,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    10.0,
+                    0.0,
+                    0.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 2.0,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light DarkRed",
+            "Transform": {
+                "Position": [
+                    -0.5999999046325684,
+                    1.9000002145767212,
+                    -3.8000001907348633
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 478,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-Box-4",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.19999998807907104,
+                    -0.550000011920929,
+                    -1.4901161193847656e-07
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.3499999940395355,
+                    0.05000000074505806,
+                    0.3499999940395355
+                ]
+            }
+        },
+        {
+            "EntityID": 479,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Plane_mesh.pa"
+            },
+            "Name": "Plateforme_2",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/PlateformNativeScript2.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    2.0,
+                    0.009999999776482582,
+                    2.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 100000000.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    true,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    true,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    1.3250000476837158,
+                    -0.44999998807907104,
+                    -2.2351741790771484e-08
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.09999997913837433,
+                    1.0,
+                    0.09999997913837433
+                ]
+            }
+        },
+        {
+            "EntityID": 480,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline3",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline3.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.7000000476837158,
+                    -0.019999999552965164,
+                    -7.450580596923828e-09
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 481,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline4",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline4.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -1.600000023841858,
+                    0.1599999964237213,
+                    3.799999952316284
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 482,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline5",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline5.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -1.3000000715255737,
+                    0.48000001907348633,
+                    3.799999952316284
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 483,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline6",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline6.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -1.0,
+                    0.7799999713897705,
+                    3.799999952316284
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 484,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline7",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline7.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.019999999552965164,
+                    -0.7000000476837158
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 485,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Torus_mesh.pa"
+            },
+            "Name": "Trampoline8",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Trampoline8.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.7999999523162842,
+                    0.10000000149011612,
+                    1.600000023841858
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.009999999776482582,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.8199999928474426,
+                    -1.2000000476837158
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.10000000149011612,
+                    0.10000000149011612,
+                    0.10000000149011612
+                ]
+            }
+        },
+        {
+            "EntityID": 486,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cube_mesh.pa"
+            },
+            "Name": "Wall-9",
+            "RigidBody": {
+                "BoxSize": [
+                    2.049999952316284,
+                    2.049999952316284,
+                    2.049999952316284
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.8500000238418579,
+                    -1.2000000476837158
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.20000000298023224,
+                    0.05000000074505806,
+                    0.20000000298023224
+                ]
+            }
+        },
+        {
+            "EntityID": 487,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline",
+            "Transform": {
+                "Position": [
+                    -0.5999999046325684,
+                    -0.6999997496604919,
+                    -1.2000001668930054
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 488,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_2",
+            "Transform": {
+                "Position": [
+                    -0.5999999046325684,
+                    0.10000023990869522,
+                    -0.7000001668930054
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 489,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_3",
+            "Transform": {
+                "Position": [
+                    -0.5999999046325684,
+                    0.10000023990869522,
+                    0.09999984502792358
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 490,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_4",
+            "Transform": {
+                "Position": [
+                    0.7000001668930054,
+                    0.10000023990869522,
+                    -1.564621925354004e-07
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 491,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_5",
+            "Transform": {
+                "Position": [
+                    0.3000001311302185,
+                    0.5000002384185791,
+                    0.39999985694885254
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 492,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_6",
+            "Transform": {
+                "Position": [
+                    -1.5999999046325684,
+                    0.30000025033950806,
+                    3.8000004291534424
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 493,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_7",
+            "Transform": {
+                "Position": [
+                    -1.2999999523162842,
+                    0.5000002384185791,
+                    3.8000004291534424
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 494,
+            "Light": {
+                "CastShadows": true,
+                "Color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Direction": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "Intensity": 0.10000000149011612,
+                "OrthoSize": 15.0,
+                "Range": 100.0,
+                "ShadowFar": 30.0,
+                "ShadowNear": 0.10000000149011612,
+                "SpotAngle": 45.0,
+                "Type": 1
+            },
+            "Name": "Light Tampoline_8",
+            "Transform": {
+                "Position": [
+                    -0.9999999403953552,
+                    0.8000002503395081,
+                    3.8000004291534424
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "EntityID": 495,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap1",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.5999999642372131,
+                    0.6000000238418579,
+                    -0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 496,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap2",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -0.10000001639127731,
+                    0.4000000059604645,
+                    0.40000003576278687
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 497,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap3",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.5999999642372131,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.6666666865348816
+                    },
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.3333333432674408
+                    }
+                ],
+                "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
+            },
+            "EntityID": 498,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Enemy\\Enemy_mat_Ch19_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Enemy\\Enemy_mesh.pa"
+            },
+            "Name": "Enemy_2",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/EnemyNativeScript2.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.07500000298023224,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.28008168935775757,
+                    0.6050000190734863,
+                    1.574846863746643
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.0009999996982514858,
+                    0.0010000000474974513,
+                    0.0009999996982514858
+                ]
+            }
+        },
+        {
+            "EntityID": 499,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap4",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -1.0000001192092896,
+                    0.9599999785423279,
+                    4.699999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 500,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap5",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -1.2000001668930054,
+                    0.9599999785423279,
+                    4.199999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 501,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap6",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -1.6000001430511475,
+                    0.9599999785423279,
+                    4.199999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": false,
+                        "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.6729323267936707
+                    },
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.32706767320632935
+                    }
+                ],
+                "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
+            },
+            "EntityID": 502,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Enemy\\Enemy_mat_Ch19_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Enemy\\Enemy_mesh.pa"
+            },
+            "Name": "Enemy_3",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/EnemyNativeScript3.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.07500000298023224,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    3.9199185371398926,
+                    1.2200000286102295,
+                    2.474846839904785
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.0009999996982514858,
+                    0.0010000000474974513,
+                    0.0009999996982514858
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.6666666865348816
+                    },
+                    {
+                        "IsLooping": true,
+                        "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
+                        "Weight": 0.3333333432674408
+                    }
+                ],
+                "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
+            },
+            "EntityID": 503,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Characters\\Enemy\\Enemy_mat_Ch19_Body.pa"
+                ],
+                "Path": "Assets\\Characters\\Enemy\\Enemy_mesh.pa"
+            },
+            "Name": "Enemy_4",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/EnemyNativeScript4.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    70.0,
+                    150.0,
+                    70.0
+                ],
+                "Height": 1.0,
+                "IsStatic": false,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.07500000298023224,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    true,
+                    false,
+                    true
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    -0.6000000238418579,
+                    -0.7950000166893005,
+                    -3.125153064727783
+                ],
+                "Rotation": [
+                    0.0,
+                    89.9999771118164,
+                    0.0
+                ],
+                "Scale": [
+                    0.0009999996982514858,
+                    0.0010000000474974513,
+                    0.0009999996982514858
+                ]
+            }
+        },
+        {
+            "EntityID": 504,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap7",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -1.3000001907348633,
+                    0.9599999785423279,
+                    4.699999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 505,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap8",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -1.6000001430511475,
+                    0.9599999785423279,
+                    5.199999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 506,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap9",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -1.1000001430511475,
+                    0.9599999785423279,
+                    5.199999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 507,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap10",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.19999995827674866,
+                    0.6000000238418579,
+                    1.2999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 508,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap11",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -0.20000004768371582,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 509,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap12",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -0.7000001072883606,
+                    0.6000000238418579,
+                    1.2999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 510,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap13",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -0.8000000715255737,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 511,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap14",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    -0.5000000596046448,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 512,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap15",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.09999996423721313,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 513,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap16",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/TrapVQ.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.699999988079071,
+                    0.6000000238418579,
+                    0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        }
+    ]
+}
