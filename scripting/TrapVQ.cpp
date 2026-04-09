@@ -73,9 +73,11 @@ public:
             return;
 
         if (characterTransform.Position.x <= trapTransform.Position.x + val && characterTransform.Position.z <= trapTransform.Position.z + val &&
-            characterTransform.Position.x >= trapTransform.Position.x - val && characterTransform.Position.z >= trapTransform.Position.z - val) {
-            TerminalInstance->info("Trap detects player!");
-            m_funcSys->Call("Activate", { character });
+            characterTransform.Position.x >= trapTransform.Position.x - val && characterTransform.Position.z >= trapTransform.Position.z - val && 
+            characterTransform.Position.y <= trapTransform.Position.y + hitRange && characterTransform.Position.y >= trapTransform.Position.y - hitRange) {
+            //TerminalInstance->info("Trap detects player!");
+            //m_funcSys->Call("Activate", { character });
+            std::cout << "mort\n";
         }
     }
 
@@ -84,6 +86,7 @@ public:
 
     int damage = 100;
     float val = 0.2f;
+    float hitRange = 0.1f;
     Engine::ECS::Entity character = Engine::ECS::NULL_ENTITY;
 
 private:

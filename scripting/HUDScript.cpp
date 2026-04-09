@@ -1,5 +1,6 @@
 #include "script_pch.h"
 #include <imgui.h>
+#include <chrono>
 #include "Systems/FunctionRegistrySystem.h" // Make sure to include this
 
 #ifdef _WIN32
@@ -10,20 +11,42 @@
 
 class HUDScript : public Engine::Scripting::NativeScript {
 public:
-    int playerHealth = 100;
-    int playerAmmo = 30;
 
-    // 1. Move the ImGui code out of OnUpdate into its own method
+    bool running = false;
+    std::chrono::high_resolution_clock::time_point startTime{};
+    float elapsedSeconds = 0.0f;
+
+    void StartRun() {
+        running = true;
+        startTime = std::chrono::high_resolution_clock::now();
+    }
+
+    void StopRun() {
+        running = false;
+    }
+
     void DrawHUD() {
-        ImGuiWindowFlags window_flags = ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoFocusOnAppearing;
-        ImGui::Begin("Player HUD", nullptr, window_flags);
-        ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "HEALTH: %d", playerHealth);
-        ImGui::TextColored(ImVec4(1.0f, 0.8f, 0.0f, 1.0f), "AMMO: %d", playerAmmo);
+        ImGui::SetNextWindowPos(ImVec2(250, 200), ImGuiCond_Always, ImVec2(0, 0));
+
+        ImGuiWindowFlags flags = ImGuiWindowFlags_AlwaysAutoResize |
+            ImGuiWindowFlags_NoDecoration |
+            ImGuiWindowFlags_NoFocusOnAppearing |
+            ImGuiWindowFlags_NoMove;
+
+        ImGui::Begin("Run Timer", nullptr, flags);
+
+        if (running) {
+            auto now = std::chrono::high_resolution_clock::now();
+            elapsedSeconds = std::chrono::duration<float>(now - startTime).count();
+        }
+
+        ImGui::Text("Time: %.2f s", elapsedSeconds);
+
         ImGui::End();
     }
 
-    // 2. Register the function when the script starts
-    void OnInit() override { // Or OnInit(), depending on your base class
+    void OnInit() override { 
+        /*
         TerminalInstance->info("[HUDScript]: OnInit Called.");
         Engine::Systems::FunctionRegistrySystem* funcReg = engine->GetSystem<Engine::Systems::FunctionRegistrySystem>();
         if (funcReg) {
@@ -40,15 +63,20 @@ public:
                 this->DrawHUD();
             });
         }
+        */
+        StartRun();
+
+        if (auto* ui = engine->GetSystem<Engine::Systems::ImGuiSystem>()) {
+            ui->RegisterUICallback("RunTimer", [this]() { DrawHUD(); });
+        }
     }
 
     void OnUpdate(float dt) override {
         // Just game logic here now! No ImGui code.
     }
     
-    // Optional but recommended: Unregister when the script is destroyed
-    // to prevent the ImGuiSystem from calling a deleted script instance.
-    void OnDestroy() override {
+    void OnDestroy() override { 
+        /*
         TerminalInstance->info("[HUDScript]: OnDestroy Called.");
         auto funcReg = engine->GetSystem<Engine::Systems::FunctionRegistrySystem>();
         if (funcReg) {
@@ -56,6 +84,9 @@ public:
         }
         if (Engine::Systems::ImGuiSystem* ImGuiSystem = engine->GetSystem<Engine::Systems::ImGuiSystem>()) {
             ImGuiSystem->UnregisterUICallback("DrawPlayerHUD");
+        }*/
+        if (auto* ui = engine->GetSystem<Engine::Systems::ImGuiSystem>()) {
+            ui->UnregisterUICallback("RunTimer");
         }
     }
 };
