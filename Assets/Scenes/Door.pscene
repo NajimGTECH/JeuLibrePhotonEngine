@@ -6,11 +6,13 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 133,
+            "EntityID": 414,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/ThirdPersonCamera.dll"
+                "Path": "Scripts/ThirdPersonCamera.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -31,7 +33,7 @@
             }
         },
         {
-            "EntityID": 134,
+            "EntityID": 415,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -83,7 +85,7 @@
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 135,
+            "EntityID": 416,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -138,7 +140,7 @@
             }
         },
         {
-            "EntityID": 136,
+            "EntityID": 417,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -159,7 +161,7 @@
             }
         },
         {
-            "EntityID": 137,
+            "EntityID": 418,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -211,7 +213,7 @@
             }
         },
         {
-            "EntityID": 138,
+            "EntityID": 419,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -252,7 +254,7 @@
             }
         },
         {
-            "EntityID": 139,
+            "EntityID": 420,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -293,7 +295,7 @@
             }
         },
         {
-            "EntityID": 140,
+            "EntityID": 421,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -334,7 +336,7 @@
             }
         },
         {
-            "EntityID": 141,
+            "EntityID": 422,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cheese_mesh.pa"
@@ -342,7 +344,9 @@
             "Name": "Cheese",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/ItemRotator.dll"
+                "Path": "Scripts/ItemRotator.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -363,7 +367,7 @@
             }
         },
         {
-            "EntityID": 142,
+            "EntityID": 423,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Coin_mesh.pa"
@@ -371,11 +375,13 @@
             "Name": "Coin",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/ItemRotator.dll"
+                "Path": "Scripts/ItemRotator.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
-                    0.0,
+                    -0.20000000298023224,
                     0.10000000149011612,
                     0.0
                 ],
@@ -392,7 +398,7 @@
             }
         },
         {
-            "EntityID": 143,
+            "EntityID": 424,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -400,7 +406,9 @@
             "Name": "Trap",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -421,7 +429,7 @@
             }
         },
         {
-            "EntityID": 144,
+            "EntityID": 425,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -429,7 +437,9 @@
             "Name": "Trap_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -450,7 +460,7 @@
             }
         },
         {
-            "EntityID": 145,
+            "EntityID": 426,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -458,7 +468,9 @@
             "Name": "Trap_Copy_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -479,7 +491,7 @@
             }
         },
         {
-            "EntityID": 146,
+            "EntityID": 427,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -487,7 +499,9 @@
             "Name": "Trap_Copy_Copy_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -508,7 +522,7 @@
             }
         },
         {
-            "EntityID": 147,
+            "EntityID": 428,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -516,7 +530,9 @@
             "Name": "Trap_Copy_Copy_Copy_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -537,7 +553,7 @@
             }
         },
         {
-            "EntityID": 148,
+            "EntityID": 429,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -545,7 +561,9 @@
             "Name": "Trap_Copy_Copy_Copy_Copy_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -566,7 +584,7 @@
             }
         },
         {
-            "EntityID": 149,
+            "EntityID": 430,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -574,7 +592,9 @@
             "Name": "Trap_Copy_Copy_Copy_Copy_Copy_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -595,7 +615,7 @@
             }
         },
         {
-            "EntityID": 150,
+            "EntityID": 431,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -603,7 +623,9 @@
             "Name": "Trap_Copy_Copy_Copy_Copy_Copy_Copy_Copy_Copy_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -624,7 +646,7 @@
             }
         },
         {
-            "EntityID": 151,
+            "EntityID": 432,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -632,7 +654,9 @@
             "Name": "Trap_Copy_Copy_Copy_Copy_Copy_Copy_Copy_Copy",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Trap.dll"
+                "Path": "Scripts/Trap.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -653,7 +677,7 @@
             }
         },
         {
-            "EntityID": 152,
+            "EntityID": 433,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -661,7 +685,9 @@
             "Name": "Box",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/Box.dll"
+                "Path": "Scripts/Box.dll",
+                "Persistant": false,
+                "RunInEditor": false
             },
             "Transform": {
                 "Position": [
@@ -678,6 +704,195 @@
                     0.03999999910593033,
                     0.03999999910593033,
                     0.03999999910593033
+                ]
+            }
+        },
+        {
+            "EntityID": 434,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cheese_mesh.pa"
+            },
+            "Name": "Cheese_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.05000000074505806,
+                    0.4000000059604645
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 435,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cheese_mesh.pa"
+            },
+            "Name": "Cheese_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.10000000149011612,
+                    0.05000000074505806,
+                    0.4000000059604645
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 436,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cheese_mesh.pa"
+            },
+            "Name": "Cheese_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.20000000298023224,
+                    0.05000000074505806,
+                    0.4000000059604645
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "EntityID": 437,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\Cheese_mesh.pa"
+            },
+            "Name": "Cheese_Copy_Copy_Copy_Copy",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/ItemRotator.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "Transform": {
+                "Position": [
+                    0.20000000298023224,
+                    0.05000000074505806,
+                    0.30000001192092896
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.029999999329447746,
+                    0.029999999329447746,
+                    0.029999999329447746
+                ]
+            }
+        },
+        {
+            "Animator": {
+                "Animations": [],
+                "SkeletonPath": "Assets\\Default\\Door_skeleton.pa"
+            },
+            "EntityID": 438,
+            "MeshRenderer": {
+                "Active": true,
+                "Materials": [
+                    "Assets\\Default\\Door_mat_M_Door.pa"
+                ],
+                "Path": "Assets\\Default\\Door_mesh.pa"
+            },
+            "Name": "Door",
+            "NativeScript": {
+                "Enabled": true,
+                "Path": "Scripts/Door.dll",
+                "Persistant": false,
+                "RunInEditor": false
+            },
+            "RigidBody": {
+                "BoxSize": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "Height": 1.0,
+                "IsStatic": true,
+                "Mass": 1.0,
+                "Offset": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "PosLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "Radius": 0.5,
+                "RotLock": [
+                    false,
+                    false,
+                    false
+                ],
+                "ShapeType": 0
+            },
+            "Transform": {
+                "Position": [
+                    0.0,
+                    0.0,
+                    -0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.0007999999797903001,
+                    0.0007999999797903001,
+                    0.0007999999797903001
                 ]
             }
         }
