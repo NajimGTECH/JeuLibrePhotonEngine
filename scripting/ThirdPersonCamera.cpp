@@ -213,7 +213,6 @@ public:
                 yaw += 1.f * cameraSpeed * dt;
             }
             if (InputSysteminstance->GetKeyState(GLFW_KEY_UP)) {
-
                 if (pitch <= MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
 
                 pitch -= 1.f * cameraSpeed * dt;
@@ -232,8 +231,8 @@ public:
                 distance += 1 * zoomSpeed * dt;
             }
         }
-
-        if (registry->HasComponent<Engine::Components::Transform>(entityID) &&
+        
+        if (registry->HasComponent<Engine::Components::Transform>(entityID) && 
             registry->HasComponent<Engine::Components::Transform>(targetCameraEntity)) {
 
             auto& cameraTransform = registry->GetComponent<Engine::Components::Transform>(entityID);
