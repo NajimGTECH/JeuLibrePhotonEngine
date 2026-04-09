@@ -163,12 +163,12 @@ public:
         if (InputSysteminstance->GetMouseButtonPressed(1)) {
             isMouseCaptured = !isMouseCaptured;
             InputSysteminstance->SetMouseCapture(isMouseCaptured);
-
-            std::vector<Engine::ECS::Entity> allEntities = registry->View<Engine::Components::Transform>();
+            std::cout << "oui\n";
+            /*std::vector<Engine::ECS::Entity> allEntities = registry->View<Engine::Components::Transform>();
             TerminalInstance->info("Entities in the scene:");
             for (Engine::ECS::Entity entity : allEntities) {
                 TerminalInstance->info("    " + registry->GetEntityName(entity));
-            }
+            }*/
         }
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();

@@ -26,16 +26,18 @@ public:
 
     Engine::ECS::Entity targetEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
+    Engine::ECS::Entity targetSpawn = Engine::ECS::NULL_ENTITY;
 
     bool isMouseCaptured = false;
     bool animationsInitialized = false;
 
-    // --- Animation Paths (Replace these with your actual asset paths!) ---
+    // --- Animation Paths ---
     std::string idleAnim = "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa";
     std::string forwardAnim = "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa";
     std::string backwardAnim = "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa";
 
     // 1.0 = full forward, 0.0 = idle, -1.0 = full backward
+
     float currentMoveState = 0.0f;
 
     void OnInit() override {
@@ -76,24 +78,38 @@ public:
             std::cout << "Returned value was: " << finalResult << std::endl;
         }
 
+        TeleportTargetToSpawn();
+
         funcSys->Register("OnStep", [this](std::vector<std::any> args) -> std::any {
             return this->HandleFootstep(args);
             });
     }
 
-    std::any HandleFootstep(const std::vector<std::any>& args) {
-        if (args.empty()) return {}; // Safety check
+    bool checkIfTargetHasFallenDown()
+    {
+        auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
 
+        return targetTransform.Position.y <= -5;
+    }
+
+    void TeleportTargetToSpawn()
+    {
+        // Teleports player to spawnPoint
+        auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
+        auto& spawnTransform = registry->GetComponent<Engine::Components::Transform>(targetSpawn);
+        targetTransform.Position = spawnTransform.Position;
+    }
+
+    std::any HandleFootstep(const std::vector<std::any>& args) {
+        if (args.empty()) return {};
 
         if (auto animSys = engine->GetSystem<Engine::Systems::AnimatorSystem>()) {
-            // TerminalInstance->info("Entity: " + registry->GetEntityName(targetEntity) + " Weight: " + std::to_string(animSys->GetAnimationWeight(targetEntity, forwardAnim)));
             if (animSys->GetAnimationWeight(targetEntity, forwardAnim) < 0.75) {
                 return {};
             }
         }
 
         try {
-            // The AnimatorSystem passes the Entity as the first argument
             Engine::ECS::Entity entity = std::any_cast<Engine::ECS::Entity>(args[0]);
 
             TerminalInstance->debug("Footstep triggered by Entity ID: " + std::to_string(static_cast<uint32_t>(entity)));
@@ -121,16 +137,18 @@ public:
             TerminalInstance->error("OnFootstep: Invalid argument type passed!");
         }
 
-        return {}; // Return empty std::any
+        return {};
     }
 
     void FindTarget() {
         for (auto e : registry->View<Engine::Components::Transform>()) {
+            static int itemIndex = 0;
             if (registry->GetEntityName(e) == "Character") {
                 targetEntity = e;
-            }
-            else if (registry->GetEntityName(e) == "Floor") {
                 targetCameraEntity = e;
+            }
+            else if (registry->GetEntityName(e) == "SpawnPoint") {
+                targetSpawn = e;
             }
         }
     }
@@ -156,12 +174,6 @@ public:
         if (InputSysteminstance->GetMouseButtonPressed(1)) {
             isMouseCaptured = !isMouseCaptured;
             InputSysteminstance->SetMouseCapture(isMouseCaptured);
-
-            std::vector<Engine::ECS::Entity> allEntities = registry->View<Engine::Components::Transform>();
-            TerminalInstance->info("Entities in the scene:");
-            for (Engine::ECS::Entity entity : allEntities) {
-                TerminalInstance->info("    " + registry->GetEntityName(entity));
-            }
         }
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
@@ -171,30 +183,11 @@ public:
             if (targetEntity == Engine::ECS::NULL_ENTITY) return;
         }
 
+        if (checkIfTargetHasFallenDown()) TeleportTargetToSpawn();
+
         if (!animationsInitialized) {
             if (!InitAnimations()) {
                 TerminalInstance->info("Animations not loaded...");
-            }
-        }
-
-        // JUMP LOGIC
-        if (InputSysteminstance->GetKeyPressed(GLFW_KEY_SPACE) && physicsSystem) {
-            auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
-
-            // Ignore the targetEntity (character) so the raycast doesn't hit its own capsule
-            Engine::Systems::PhysicsUtils::RaycastHit hitResult = physicsSystem->Raycast(
-                targetTransform.Position,
-                targetTransform.Position - glm::vec3(0.0, 0.1, 0.0),
-                targetEntity,
-                { true, 0.1f, {1, 0, 0}, {1, 1, 0}, {0, 1, 1}, {0.5, 0.5, 0.5}, 0.05f, 0.012f }
-            );
-
-            std::string HitEntityName = registry->GetEntityName(hitResult.hitEntity);
-            TerminalInstance->print("RayCast Hit " + HitEntityName);
-
-            if (HitEntityName == "Floor") {
-                // Apply an upward impulse to the character body
-                physicsSystem->AddImpulse(targetEntity, targetTransform.Up * 1.01f);
             }
         }
 
@@ -202,34 +195,26 @@ public:
             return;
         }
 
-        // Camera Inputs
+        // Camera Inputs (Mouse Look)
         if (isMouseCaptured)
         {
-            // Camera Key Movements
-            if (InputSysteminstance->GetKeyState(GLFW_KEY_LEFT)) {
-                yaw += -1.f * cameraSpeed * dt;
-            }
-            if (InputSysteminstance->GetKeyState(GLFW_KEY_RIGHT)) {
-                yaw += 1.f * cameraSpeed * dt;
-            }
-            if (InputSysteminstance->GetKeyState(GLFW_KEY_UP)) {
+            glm::vec2 look = InputSysteminstance->lookInput;
 
-                if (pitch <= MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
+            float xInput = invertX ? look.x : -look.x;
+            float yInput = invertY ? -look.y : look.y;
 
-                pitch -= 1.f * cameraSpeed * dt;
-            }
-            if (InputSysteminstance->GetKeyState(GLFW_KEY_DOWN)) {
+            yaw += xInput * cameraSpeed * dt;
+            pitch += yInput * cameraSpeed * dt;
 
-                if (pitch >= MAX_PITCH_LIMIT) pitch = MAX_PITCH_LIMIT;
+            if (pitch > MAX_PITCH_LIMIT) pitch = MAX_PITCH_LIMIT;
+            if (pitch < MIN_PITCH_LIMIT) pitch = MIN_PITCH_LIMIT;
 
-                pitch += 1.f * cameraSpeed * dt;
-            }
-            // Camera Zoom
+            // Zoom kept on keyboard
             if (InputSysteminstance->GetKeyState(GLFW_KEY_Q)) {
-                distance -= 1 * zoomSpeed * dt;
+                distance -= zoomSpeed * dt;
             }
             if (InputSysteminstance->GetKeyState(GLFW_KEY_E)) {
-                distance += 1 * zoomSpeed * dt;
+                distance += zoomSpeed * dt;
             }
         }
 
@@ -240,7 +225,6 @@ public:
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetCameraEntity);
             auto& targetCharacterTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
 
-            // Camera Rotation
             cameraTransform.Rotation.x = pitch;
             cameraTransform.Rotation.y = yaw;
             cameraTransform.Rotation.z = 0.0f;
@@ -251,7 +235,6 @@ public:
 
             cameraTransform.Forward = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, -1.0f, 0.0f)));
 
-            // Character Movement Logic
             float targetMoveState = 0.0f;
 
             glm::vec3 flatForward = glm::normalize(glm::vec3(cameraTransform.Forward.x, 0.0f, cameraTransform.Forward.z));
@@ -283,25 +266,16 @@ public:
                 }
             }
 
-            // Normalize input so diagonal movement isn't faster, then multiply by speed
             if (glm::length(inputDirection) > 0.0f) {
                 inputDirection = glm::normalize(inputDirection) * moveSpeed;
             }
 
-            // APPLY PHYSICS VELOCITY
             if (physicsSystem) {
-                // Fetch the current velocity so we don't overwrite gravity (the Y axis)
                 glm::vec3 currentVel = physicsSystem->GetLinearVelocity(targetEntity);
-
-                // Keep the current falling/jumping velocity, but overwrite X and Z with input
                 glm::vec3 targetVelocity = glm::vec3(inputDirection.x, currentVel.y, inputDirection.z);
                 physicsSystem->SetLinearVelocity(targetEntity, targetVelocity);
             }
 
-            // Safely set character rotation (Euler locks in your PhysicsSystem handle this safely)
-            //cameraTransform.Rotation.y = yaw + 180.0f; // Comment because turn all the floor and not the camera
-
-            // Smoothly interpolate animation states
             currentMoveState += (targetMoveState - currentMoveState) * animationBlendSpeed * dt;
 
             if (auto animSys = engine->GetSystem<Engine::Systems::AnimatorSystem>()) {
@@ -314,7 +288,6 @@ public:
                 animSys->SetAnimationWeight(targetEntity, backwardAnim, backwardWeight);
             }
 
-            // Update Camera Position based on the newly moved target
             glm::vec3 targetFocusPos = targetTransform.Position + glm::vec3(0.0f, targetHeightOffset, 0.0f);
             cameraTransform.Position = targetFocusPos - (cameraTransform.Forward * distance);
         }

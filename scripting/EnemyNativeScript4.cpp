@@ -7,12 +7,13 @@
 #define SCRIPT_API __attribute__((visibility("default")))
 #endif
 
-class EnemyNativeScript : public Engine::Scripting::NativeScript {
+class EnemyNativeScript4 : public Engine::Scripting::NativeScript {
 public:
 
     bool invertEnemyDir = false;
     float speed = 0.2f;
-    float distancePatrol = 0.3f;
+    float PointCheck1 = -3.125f;
+    float PointCheck2 = -1.425f;
 
     Engine::ECS::Entity targetEnemy = Engine::ECS::NULL_ENTITY;
 
@@ -26,7 +27,7 @@ public:
 
     void FindTarget() {
         for (auto e : registry->View<Engine::Components::Transform>()) {
-            if (registry->GetEntityName(e) == "Enemy") {
+            if (registry->GetEntityName(e) == "Enemy_4") {
                 targetEnemy = e;
             }
         }
@@ -41,8 +42,8 @@ public:
         auto& targetEnemyTransform = registry->GetComponent<Engine::Components::Transform>(targetEnemy);
 
         // Enemy Patrol
-        if (targetEnemyTransform.Position.z <= -distancePatrol) invertEnemyDir = false;
-        if (targetEnemyTransform.Position.z >= distancePatrol) invertEnemyDir = true;
+        if (targetEnemyTransform.Position.z <= PointCheck1) invertEnemyDir = false;
+        if (targetEnemyTransform.Position.z >= PointCheck2) invertEnemyDir = true;
 
         if (invertEnemyDir) {
             targetEnemyTransform.Position.z -= speed * dt;
@@ -56,5 +57,5 @@ public:
 };
 
 extern "C" SCRIPT_API Engine::Scripting::NativeScript* CreateScript() {
-    return new EnemyNativeScript();
+    return new EnemyNativeScript4();
 }
