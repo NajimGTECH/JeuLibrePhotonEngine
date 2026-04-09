@@ -150,7 +150,7 @@ public:
     }
 
     void OnUpdate(float dt) override {
-        if (InputSysteminstance->GetMouseButtonPressed(1)) {
+        /*if (InputSysteminstance->GetMouseButtonPressed(1)) {
             isMouseCaptured = !isMouseCaptured;
             InputSysteminstance->SetMouseCapture(isMouseCaptured);
 
@@ -159,7 +159,7 @@ public:
             for (Engine::ECS::Entity entity : allEntities) {
                 TerminalInstance->info("    " + registry->GetEntityName(entity));
             }
-        }
+        }*/
 
         auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
 

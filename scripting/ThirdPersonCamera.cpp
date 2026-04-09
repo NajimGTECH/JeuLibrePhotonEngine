@@ -36,6 +36,8 @@ public:
     std::string forwardAnim = "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa";
     std::string backwardAnim = "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa";
 
+    // 1.0 = full forward, 0.0 = idle, -1.0 = full backward
+
     float currentMoveState = 0.0f;
 
     void OnInit() override {
@@ -111,6 +113,15 @@ public:
             Engine::ECS::Entity entity = std::any_cast<Engine::ECS::Entity>(args[0]);
 
             TerminalInstance->debug("Footstep triggered by Entity ID: " + std::to_string(static_cast<uint32_t>(entity)));
+
+            // Example: Play an audio clip attached to this entity
+            /*
+            if (m_Registry->HasComponent<Engine::Components::AudioSource>(entity)) {
+                auto& audio = m_Registry->GetComponent<Engine::Components::AudioSource>(entity);
+                // Assuming you have a way to pick a random footstep sound or just play the default
+                audio.Play();
+            }
+            */
 
             auto physicsSystem = engine->GetSystem<Engine::Systems::PhysicsSystem>();
             auto& targetTransform = registry->GetComponent<Engine::Components::Transform>(targetEntity);
@@ -232,6 +243,7 @@ public:
             glm::vec3 inputDirection(0.0f);
 
             if (isMouseCaptured) {
+                // Player Movements
                 if (InputSysteminstance->GetKeyState(GLFW_KEY_W)) {
                     inputDirection += flatForward;
                     targetMoveState = 1.0f;
