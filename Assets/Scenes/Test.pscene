@@ -1,7 +1,7 @@
 {
     "Entities": [
         {
-            "EntityID": 2148,
+            "EntityID": 376,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -53,7 +53,7 @@
             }
         },
         {
-            "EntityID": 2149,
+            "EntityID": 377,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -111,7 +111,7 @@
             }
         },
         {
-            "EntityID": 2150,
+            "EntityID": 378,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -172,21 +172,15 @@
             "Animator": {
                 "Animations": [
                     {
-                        "IsLooping": false,
-                        "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.0694444552063942
-                    },
-                    {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.930555522441864
+                        "Weight": 1.0
                     }
                 ],
-                "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
+                "SkeletonPath": "Assets\\Animations\\Walk Enemy\\Walking_skeleton.pa"
             },
-            "EntityID": 2151,
+            "EntityID": 379,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -230,14 +224,14 @@
             },
             "Transform": {
                 "Position": [
-                    0.8199183344841003,
+                    0.5199183225631714,
                     0.005000002682209015,
                     -0.625153124332428
                 ],
                 "Rotation": [
-                    -180.0,
-                    180.0,
-                    -180.0
+                    -5.008951575291576e-06,
+                    -5.008951575291576e-06,
+                    -5.008951575291576e-06
                 ],
                 "Scale": [
                     0.0010000000474974513,
@@ -252,7 +246,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 2152,
+            "EntityID": 380,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -279,7 +273,7 @@
             }
         },
         {
-            "EntityID": 2153,
+            "EntityID": 381,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -326,24 +320,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.1882352977991104
+                        "Weight": 0.10810811817646027
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.05882352963089943
+                        "Weight": 0.03378378227353096
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.7529411911964417
+                        "Weight": 0.8581081032752991
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 2154,
+            "EntityID": 382,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -398,7 +392,7 @@
             }
         },
         {
-            "EntityID": 2155,
+            "EntityID": 383,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -419,7 +413,7 @@
             }
         },
         {
-            "EntityID": 2156,
+            "EntityID": 384,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -471,7 +465,7 @@
             }
         },
         {
-            "EntityID": 2157,
+            "EntityID": 385,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -512,7 +506,7 @@
             }
         },
         {
-            "EntityID": 2158,
+            "EntityID": 386,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -553,7 +547,7 @@
             }
         },
         {
-            "EntityID": 2159,
+            "EntityID": 387,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -594,7 +588,7 @@
             }
         },
         {
-            "EntityID": 2160,
+            "EntityID": 388,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -646,7 +640,7 @@
             }
         },
         {
-            "EntityID": 2161,
+            "EntityID": 389,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -698,7 +692,7 @@
             }
         },
         {
-            "EntityID": 2162,
+            "EntityID": 390,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -750,7 +744,7 @@
             }
         },
         {
-            "EntityID": 2163,
+            "EntityID": 391,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -802,7 +796,7 @@
             }
         },
         {
-            "EntityID": 2164,
+            "EntityID": 392,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -854,7 +848,7 @@
             }
         },
         {
-            "EntityID": 2165,
+            "EntityID": 393,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -906,7 +900,7 @@
             }
         },
         {
-            "EntityID": 2166,
+            "EntityID": 394,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -958,7 +952,7 @@
             }
         },
         {
-            "EntityID": 2167,
+            "EntityID": 395,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1010,7 +1004,7 @@
             }
         },
         {
-            "EntityID": 2168,
+            "EntityID": 396,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1062,7 +1056,7 @@
             }
         },
         {
-            "EntityID": 2169,
+            "EntityID": 397,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1114,7 +1108,7 @@
             }
         },
         {
-            "EntityID": 2170,
+            "EntityID": 398,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1166,7 +1160,7 @@
             }
         },
         {
-            "EntityID": 2171,
+            "EntityID": 399,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1218,7 +1212,7 @@
             }
         },
         {
-            "EntityID": 2172,
+            "EntityID": 400,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1270,7 +1264,7 @@
             }
         },
         {
-            "EntityID": 2173,
+            "EntityID": 401,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1322,7 +1316,7 @@
             }
         },
         {
-            "EntityID": 2174,
+            "EntityID": 402,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1374,7 +1368,7 @@
             }
         },
         {
-            "EntityID": 2175,
+            "EntityID": 403,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1426,7 +1420,7 @@
             }
         },
         {
-            "EntityID": 2176,
+            "EntityID": 404,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1478,7 +1472,7 @@
             }
         },
         {
-            "EntityID": 2177,
+            "EntityID": 405,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1519,7 +1513,7 @@
             }
         },
         {
-            "EntityID": 2178,
+            "EntityID": 406,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1560,7 +1554,7 @@
             }
         },
         {
-            "EntityID": 2179,
+            "EntityID": 407,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1601,7 +1595,7 @@
             }
         },
         {
-            "EntityID": 2180,
+            "EntityID": 408,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1653,7 +1647,7 @@
             }
         },
         {
-            "EntityID": 2181,
+            "EntityID": 409,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1705,7 +1699,7 @@
             }
         },
         {
-            "EntityID": 2182,
+            "EntityID": 410,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1746,7 +1740,7 @@
             }
         },
         {
-            "EntityID": 2183,
+            "EntityID": 411,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1798,7 +1792,7 @@
             }
         },
         {
-            "EntityID": 2184,
+            "EntityID": 412,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -1856,7 +1850,7 @@
             }
         },
         {
-            "EntityID": 2185,
+            "EntityID": 413,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1914,7 +1908,7 @@
             }
         },
         {
-            "EntityID": 2186,
+            "EntityID": 414,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1972,7 +1966,7 @@
             }
         },
         {
-            "EntityID": 2187,
+            "EntityID": 415,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2030,7 +2024,7 @@
             }
         },
         {
-            "EntityID": 2188,
+            "EntityID": 416,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2088,7 +2082,7 @@
             }
         },
         {
-            "EntityID": 2189,
+            "EntityID": 417,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2146,7 +2140,7 @@
             }
         },
         {
-            "EntityID": 2190,
+            "EntityID": 418,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2204,7 +2198,7 @@
             }
         },
         {
-            "EntityID": 2191,
+            "EntityID": 419,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -2256,7 +2250,7 @@
             }
         },
         {
-            "EntityID": 2192,
+            "EntityID": 420,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2297,7 +2291,7 @@
             }
         },
         {
-            "EntityID": 2193,
+            "EntityID": 421,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2338,7 +2332,7 @@
             }
         },
         {
-            "EntityID": 2194,
+            "EntityID": 422,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2379,7 +2373,7 @@
             }
         },
         {
-            "EntityID": 2195,
+            "EntityID": 423,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2420,7 +2414,7 @@
             }
         },
         {
-            "EntityID": 2196,
+            "EntityID": 424,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2461,7 +2455,7 @@
             }
         },
         {
-            "EntityID": 2197,
+            "EntityID": 425,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2502,7 +2496,7 @@
             }
         },
         {
-            "EntityID": 2198,
+            "EntityID": 426,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2543,7 +2537,7 @@
             }
         },
         {
-            "EntityID": 2199,
+            "EntityID": 427,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2584,7 +2578,7 @@
             }
         },
         {
-            "EntityID": 2200,
+            "EntityID": 428,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -2609,7 +2603,7 @@
             }
         },
         {
-            "EntityID": 2205,
+            "EntityID": 429,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -2634,7 +2628,7 @@
             }
         },
         {
-            "EntityID": 2206,
+            "EntityID": 430,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -2665,18 +2659,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.0694444552063942
+                        "Weight": 0.05747126787900925
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.930555522441864
+                        "Weight": 0.9425287246704102
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 2207,
+            "EntityID": 431,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2687,7 +2681,7 @@
             "Name": "Enemy_2",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/EnemyNativeScript.dll",
+                "Path": "Scripts/EnemyNativeScript2.dll",
                 "Persistant": false,
                 "RunInEditor": false
             },
@@ -2737,7 +2731,7 @@
             }
         },
         {
-            "EntityID": 2208,
+            "EntityID": 432,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -2762,7 +2756,7 @@
             }
         },
         {
-            "EntityID": 2209,
+            "EntityID": 433,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -2787,7 +2781,7 @@
             }
         },
         {
-            "EntityID": 2210,
+            "EntityID": 434,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cone_mesh.pa"
@@ -2818,18 +2812,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.0694444552063942
+                        "Weight": 0.05747126787900925
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.930555522441864
+                        "Weight": 0.9425287246704102
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 2211,
+            "EntityID": 435,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2840,7 +2834,7 @@
             "Name": "Enemy_3",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/EnemyNativeScript.dll",
+                "Path": "Scripts/EnemyNativeScript3.dll",
                 "Persistant": false,
                 "RunInEditor": false
             },
@@ -2896,18 +2890,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.0694444552063942
+                        "Weight": 0.05747126787900925
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.930555522441864
+                        "Weight": 0.9425287246704102
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 2213,
+            "EntityID": 436,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2918,7 +2912,7 @@
             "Name": "Enemy_4",
             "NativeScript": {
                 "Enabled": true,
-                "Path": "Scripts/EnemyNativeScript.dll",
+                "Path": "Scripts/EnemyNativeScript4.dll",
                 "Persistant": false,
                 "RunInEditor": false
             },
