@@ -28,8 +28,6 @@ public:
     Engine::ECS::Entity targetCameraEntity = Engine::ECS::NULL_ENTITY;
     Engine::ECS::Entity targetSpawn = Engine::ECS::NULL_ENTITY;
 
-    Engine::ECS::Entity items[5]{ Engine::ECS::NULL_ENTITY };
-
     bool isMouseCaptured = false;
     bool animationsInitialized = false;
 
@@ -137,7 +135,7 @@ public:
             if (registry->GetEntityName(e) == "Character") {
                 targetEntity = e;
                 targetCameraEntity = e;
-
+            }
             else if (registry->GetEntityName(e) == "SpawnPoint") {
                 targetSpawn = e;
             }
