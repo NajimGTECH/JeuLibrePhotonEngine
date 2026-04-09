@@ -26,7 +26,6 @@ public:
     }
 
     void DrawHUD() {
-
         ImGui::SetNextWindowPos(ImVec2(250, 200), ImGuiCond_Always, ImVec2(0, 0));
 
         ImGuiWindowFlags flags = ImGuiWindowFlags_AlwaysAutoResize |
@@ -76,7 +75,8 @@ public:
         // Just game logic here now! No ImGui code.
     }
     
-    void OnDestroy() override { /*
+    void OnDestroy() override { 
+        /*
         TerminalInstance->info("[HUDScript]: OnDestroy Called.");
         auto funcReg = engine->GetSystem<Engine::Systems::FunctionRegistrySystem>();
         if (funcReg) {
@@ -85,7 +85,6 @@ public:
         if (Engine::Systems::ImGuiSystem* ImGuiSystem = engine->GetSystem<Engine::Systems::ImGuiSystem>()) {
             ImGuiSystem->UnregisterUICallback("DrawPlayerHUD");
         }*/
-
         if (auto* ui = engine->GetSystem<Engine::Systems::ImGuiSystem>()) {
             ui->UnregisterUICallback("RunTimer");
         }
