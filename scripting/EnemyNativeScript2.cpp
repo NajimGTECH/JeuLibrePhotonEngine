@@ -11,9 +11,9 @@ class EnemyNativeScript2 : public Engine::Scripting::NativeScript {
 public:
 
     bool invertEnemyDir = false;
-    float speed = 0.2f;
-    float PointCheck1 = 1.275f;
-    float PointCheck2 = 1.875f;
+    float speed = 0.7f;
+    float PointCheck1 = -0.880f;
+    float PointCheck2 = 0.820f;
 
     Engine::ECS::Entity targetEnemy = Engine::ECS::NULL_ENTITY;
 
@@ -42,16 +42,16 @@ public:
         auto& targetEnemyTransform = registry->GetComponent<Engine::Components::Transform>(targetEnemy);
 
         // Enemy Patrol
-        if (targetEnemyTransform.Position.z <= PointCheck1) invertEnemyDir = false;
-        if (targetEnemyTransform.Position.z >= PointCheck2) invertEnemyDir = true;
+        if (targetEnemyTransform.Position.x <= PointCheck1) invertEnemyDir = false;
+        if (targetEnemyTransform.Position.x >= PointCheck2) invertEnemyDir = true;
 
         if (invertEnemyDir) {
-            targetEnemyTransform.Position.z -= speed * dt;
-            targetEnemyTransform.Rotation.y = 0;
+            targetEnemyTransform.Position.x -= speed * dt;
+            targetEnemyTransform.Rotation.y = 90;
         }
         if (!invertEnemyDir) {
-            targetEnemyTransform.Position.z += speed * dt;
-            targetEnemyTransform.Rotation.y = 180;
+            targetEnemyTransform.Position.x += speed * dt;
+            targetEnemyTransform.Rotation.y = -90;
         }
     }
 };

@@ -14,8 +14,8 @@ public:
     Engine::ECS::Entity targetCharacter = Engine::ECS::NULL_ENTITY;
 
     float val = 0.1f;
-    float forceJump = 3.5f;
-    float heightJump = 0.5f;
+    float forceJump = 5.f;
+    float heightJump = 1.f;
 
     void OnCreate() override {
         FindTarget();

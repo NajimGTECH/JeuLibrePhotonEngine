@@ -1,7 +1,7 @@
 {
     "Entities": [
         {
-            "EntityID": 376,
+            "EntityID": 150,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -53,7 +53,7 @@
             }
         },
         {
-            "EntityID": 377,
+            "EntityID": 151,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -111,7 +111,7 @@
             }
         },
         {
-            "EntityID": 378,
+            "EntityID": 152,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -180,7 +180,7 @@
                 ],
                 "SkeletonPath": "Assets\\Animations\\Walk Enemy\\Walking_skeleton.pa"
             },
-            "EntityID": 379,
+            "EntityID": 153,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -246,7 +246,7 @@
                 "Fov": 80.0,
                 "NearPlane": 0.009999999776482582
             },
-            "EntityID": 380,
+            "EntityID": 154,
             "Name": "Main Camera",
             "NativeScript": {
                 "Enabled": true,
@@ -273,7 +273,7 @@
             }
         },
         {
-            "EntityID": 381,
+            "EntityID": 155,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -320,24 +320,24 @@
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Dance\\Locking Hip Hop Dance_anim_mixamorig_Hips.pa",
-                        "Weight": 0.10810811817646027
+                        "Weight": 0.08648649603128433
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Crouch Walk Back_anim_mixamorig_Hips.pa",
-                        "Weight": 0.03378378227353096
+                        "Weight": 0.029853379353880882
                     },
                     {
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
                         "Path": "Assets\\Animations\\Walk\\Walking_anim_mixamorig_Hips.pa",
-                        "Weight": 0.8581081032752991
+                        "Weight": 0.883660078048706
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Mousey\\Mousey_skeleton.pa"
             },
-            "EntityID": 382,
+            "EntityID": 156,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -392,7 +392,7 @@
             }
         },
         {
-            "EntityID": 383,
+            "EntityID": 157,
             "Name": "AnimEditor_Preview",
             "Transform": {
                 "Position": [
@@ -413,7 +413,7 @@
             }
         },
         {
-            "EntityID": 384,
+            "EntityID": 158,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -465,7 +465,7 @@
             }
         },
         {
-            "EntityID": 385,
+            "EntityID": 159,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -506,7 +506,7 @@
             }
         },
         {
-            "EntityID": 386,
+            "EntityID": 160,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -547,7 +547,7 @@
             }
         },
         {
-            "EntityID": 387,
+            "EntityID": 161,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -588,7 +588,7 @@
             }
         },
         {
-            "EntityID": 388,
+            "EntityID": 162,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -640,7 +640,7 @@
             }
         },
         {
-            "EntityID": 389,
+            "EntityID": 163,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -692,7 +692,7 @@
             }
         },
         {
-            "EntityID": 390,
+            "EntityID": 164,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -744,7 +744,7 @@
             }
         },
         {
-            "EntityID": 391,
+            "EntityID": 165,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -796,7 +796,7 @@
             }
         },
         {
-            "EntityID": 392,
+            "EntityID": 166,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -848,7 +848,7 @@
             }
         },
         {
-            "EntityID": 393,
+            "EntityID": 167,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -900,7 +900,7 @@
             }
         },
         {
-            "EntityID": 394,
+            "EntityID": 168,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -952,7 +952,7 @@
             }
         },
         {
-            "EntityID": 395,
+            "EntityID": 169,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1004,7 +1004,7 @@
             }
         },
         {
-            "EntityID": 396,
+            "EntityID": 170,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1056,7 +1056,7 @@
             }
         },
         {
-            "EntityID": 397,
+            "EntityID": 171,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1108,7 +1108,7 @@
             }
         },
         {
-            "EntityID": 398,
+            "EntityID": 172,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1160,7 +1160,7 @@
             }
         },
         {
-            "EntityID": 399,
+            "EntityID": 173,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1212,7 +1212,7 @@
             }
         },
         {
-            "EntityID": 400,
+            "EntityID": 174,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1264,7 +1264,7 @@
             }
         },
         {
-            "EntityID": 401,
+            "EntityID": 175,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1316,7 +1316,7 @@
             }
         },
         {
-            "EntityID": 402,
+            "EntityID": 176,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1368,7 +1368,7 @@
             }
         },
         {
-            "EntityID": 403,
+            "EntityID": 177,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1420,7 +1420,7 @@
             }
         },
         {
-            "EntityID": 404,
+            "EntityID": 178,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1472,7 +1472,7 @@
             }
         },
         {
-            "EntityID": 405,
+            "EntityID": 179,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1513,7 +1513,7 @@
             }
         },
         {
-            "EntityID": 406,
+            "EntityID": 180,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1554,7 +1554,7 @@
             }
         },
         {
-            "EntityID": 407,
+            "EntityID": 181,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1595,7 +1595,7 @@
             }
         },
         {
-            "EntityID": 408,
+            "EntityID": 182,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1647,7 +1647,7 @@
             }
         },
         {
-            "EntityID": 409,
+            "EntityID": 183,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1699,7 +1699,7 @@
             }
         },
         {
-            "EntityID": 410,
+            "EntityID": 184,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -1740,7 +1740,7 @@
             }
         },
         {
-            "EntityID": 411,
+            "EntityID": 185,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -1792,7 +1792,7 @@
             }
         },
         {
-            "EntityID": 412,
+            "EntityID": 186,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Plane_mesh.pa"
@@ -1850,7 +1850,7 @@
             }
         },
         {
-            "EntityID": 413,
+            "EntityID": 187,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1908,7 +1908,7 @@
             }
         },
         {
-            "EntityID": 414,
+            "EntityID": 188,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -1966,7 +1966,7 @@
             }
         },
         {
-            "EntityID": 415,
+            "EntityID": 189,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2024,7 +2024,7 @@
             }
         },
         {
-            "EntityID": 416,
+            "EntityID": 190,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2082,7 +2082,7 @@
             }
         },
         {
-            "EntityID": 417,
+            "EntityID": 191,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2140,7 +2140,7 @@
             }
         },
         {
-            "EntityID": 418,
+            "EntityID": 192,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Torus_mesh.pa"
@@ -2198,7 +2198,7 @@
             }
         },
         {
-            "EntityID": 419,
+            "EntityID": 193,
             "MeshRenderer": {
                 "Active": true,
                 "Path": "Assets\\Default\\Cube_mesh.pa"
@@ -2250,7 +2250,7 @@
             }
         },
         {
-            "EntityID": 420,
+            "EntityID": 194,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2291,7 +2291,7 @@
             }
         },
         {
-            "EntityID": 421,
+            "EntityID": 195,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2332,7 +2332,7 @@
             }
         },
         {
-            "EntityID": 422,
+            "EntityID": 196,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2373,7 +2373,7 @@
             }
         },
         {
-            "EntityID": 423,
+            "EntityID": 197,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2414,7 +2414,7 @@
             }
         },
         {
-            "EntityID": 424,
+            "EntityID": 198,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2455,7 +2455,7 @@
             }
         },
         {
-            "EntityID": 425,
+            "EntityID": 199,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2496,7 +2496,7 @@
             }
         },
         {
-            "EntityID": 426,
+            "EntityID": 200,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2537,7 +2537,7 @@
             }
         },
         {
-            "EntityID": 427,
+            "EntityID": 201,
             "Light": {
                 "CastShadows": true,
                 "Color": [
@@ -2578,16 +2578,16 @@
             }
         },
         {
-            "EntityID": 428,
+            "EntityID": 202,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cone_mesh.pa"
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
             },
             "Name": "Trap1",
             "Transform": {
                 "Position": [
-                    0.699999988079071,
-                    0.6299999952316284,
+                    0.5999999642372131,
+                    0.6000000238418579,
                     -0.20000000298023224
                 ],
                 "Rotation": [
@@ -2596,24 +2596,24 @@
                     0.0
                 ],
                 "Scale": [
-                    0.029999999329447746,
-                    0.029999999329447746,
-                    0.029999999329447746
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
                 ]
             }
         },
         {
-            "EntityID": 429,
+            "EntityID": 203,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cone_mesh.pa"
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
             },
             "Name": "Trap2",
             "Transform": {
                 "Position": [
-                    0.09999998658895493,
-                    0.4300000071525574,
-                    0.5
+                    -0.10000001639127731,
+                    0.4000000059604645,
+                    0.40000003576278687
                 ],
                 "Rotation": [
                     0.0,
@@ -2621,23 +2621,23 @@
                     0.0
                 ],
                 "Scale": [
-                    0.029999999329447746,
-                    0.029999999329447746,
-                    0.029999999329447746
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
                 ]
             }
         },
         {
-            "EntityID": 430,
+            "EntityID": 204,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cone_mesh.pa"
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
             },
             "Name": "Trap3",
             "Transform": {
                 "Position": [
                     0.5999999642372131,
-                    0.6299999952316284,
+                    0.6000000238418579,
                     1.7999999523162842
                 ],
                 "Rotation": [
@@ -2646,9 +2646,9 @@
                     0.0
                 ],
                 "Scale": [
-                    0.029999999329447746,
-                    0.029999999329447746,
-                    0.029999999329447746
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
                 ]
             }
         },
@@ -2659,18 +2659,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.05747126787900925
+                        "Weight": 0.0
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.9425287246704102
+                        "Weight": 1.0
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 431,
+            "EntityID": 205,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2714,34 +2714,34 @@
             },
             "Transform": {
                 "Position": [
-                    -0.08008170127868652,
+                    -0.28008168935775757,
                     0.6050000190734863,
-                    1.4748468399047852
+                    1.574846863746643
                 ],
                 "Rotation": [
                     0.0,
-                    90.0,
-                    -5.008951575291576e-06
+                    89.9999771118164,
+                    0.0
                 ],
                 "Scale": [
+                    0.0009999996982514858,
                     0.0010000000474974513,
-                    0.0010000000474974513,
-                    0.0010000000474974513
+                    0.0009999996982514858
                 ]
             }
         },
         {
-            "EntityID": 432,
+            "EntityID": 206,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cone_mesh.pa"
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
             },
             "Name": "Trap4",
             "Transform": {
                 "Position": [
-                    -1.1000001430511475,
+                    -1.0000001192092896,
                     0.9599999785423279,
-                    4.199999809265137
+                    4.699999809265137
                 ],
                 "Rotation": [
                     0.0,
@@ -2749,22 +2749,22 @@
                     0.0
                 ],
                 "Scale": [
-                    0.029999999329447746,
-                    0.029999999329447746,
-                    0.029999999329447746
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
                 ]
             }
         },
         {
-            "EntityID": 433,
+            "EntityID": 207,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cone_mesh.pa"
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
             },
             "Name": "Trap5",
             "Transform": {
                 "Position": [
-                    -1.3000001907348633,
+                    -1.2000001668930054,
                     0.9599999785423279,
                     4.199999809265137
                 ],
@@ -2774,22 +2774,22 @@
                     0.0
                 ],
                 "Scale": [
-                    0.029999999329447746,
-                    0.029999999329447746,
-                    0.029999999329447746
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
                 ]
             }
         },
         {
-            "EntityID": 434,
+            "EntityID": 208,
             "MeshRenderer": {
                 "Active": true,
-                "Path": "Assets\\Default\\Cone_mesh.pa"
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
             },
             "Name": "Trap6",
             "Transform": {
                 "Position": [
-                    -1.5000001192092896,
+                    -1.6000001430511475,
                     0.9599999785423279,
                     4.199999809265137
                 ],
@@ -2799,9 +2799,9 @@
                     0.0
                 ],
                 "Scale": [
-                    0.029999999329447746,
-                    0.029999999329447746,
-                    0.029999999329447746
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
                 ]
             }
         },
@@ -2812,18 +2812,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.05747126787900925
+                        "Weight": 0.05434782803058624
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.9425287246704102
+                        "Weight": 0.945652186870575
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 435,
+            "EntityID": 209,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2890,18 +2890,18 @@
                         "IsLooping": false,
                         "Name": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Attack Enemy\\Zombie Attack_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.05747126787900925
+                        "Weight": 0.0
                     },
                     {
                         "IsLooping": true,
                         "Name": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
                         "Path": "Assets\\Animations\\Walk Enemy\\Walking_anim_mixamorig1_Hips.pa",
-                        "Weight": 0.9425287246704102
+                        "Weight": 1.0
                     }
                 ],
                 "SkeletonPath": "Assets\\Characters\\Enemy\\Enemy_skeleton.pa"
             },
-            "EntityID": 436,
+            "EntityID": 210,
             "MeshRenderer": {
                 "Active": true,
                 "Materials": [
@@ -2958,6 +2958,256 @@
                     0.0009999996982514858,
                     0.0010000000474974513,
                     0.0009999996982514858
+                ]
+            }
+        },
+        {
+            "EntityID": 211,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap7",
+            "Transform": {
+                "Position": [
+                    -1.3000001907348633,
+                    0.9599999785423279,
+                    4.699999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 212,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap8",
+            "Transform": {
+                "Position": [
+                    -1.6000001430511475,
+                    0.9599999785423279,
+                    5.199999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 213,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap9",
+            "Transform": {
+                "Position": [
+                    -1.1000001430511475,
+                    0.9599999785423279,
+                    5.199999809265137
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 214,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap10",
+            "Transform": {
+                "Position": [
+                    0.19999995827674866,
+                    0.6000000238418579,
+                    1.2999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 215,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap11",
+            "Transform": {
+                "Position": [
+                    -0.20000004768371582,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 216,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap12",
+            "Transform": {
+                "Position": [
+                    -0.7000001072883606,
+                    0.6000000238418579,
+                    1.2999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 217,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap13",
+            "Transform": {
+                "Position": [
+                    -0.8000000715255737,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 218,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap14",
+            "Transform": {
+                "Position": [
+                    -0.5000000596046448,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 219,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap15",
+            "Transform": {
+                "Position": [
+                    0.09999996423721313,
+                    0.6000000238418579,
+                    1.7999999523162842
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
+                ]
+            }
+        },
+        {
+            "EntityID": 220,
+            "MeshRenderer": {
+                "Active": true,
+                "Path": "Assets\\Default\\OPM0041_mesh.pa"
+            },
+            "Name": "Trap16",
+            "Transform": {
+                "Position": [
+                    0.699999988079071,
+                    0.6000000238418579,
+                    0.20000000298023224
+                ],
+                "Rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "Scale": [
+                    0.004999999888241291,
+                    0.004999999888241291,
+                    0.004999999888241291
                 ]
             }
         }
